@@ -60,6 +60,9 @@ class Elemento(Element):
         self.do_drop(drop)
 
     def foi(self):
+    self._do_foi()
+
+    def _do_foi(self):
         style = {'opacity': "inherited", 'width': 30, 'height': "30px", 'min-height': '30px', 'float': 'left',
                  'position': 'unset', 'overflow': 'hidden',
                  'background-image': 'url({})'.format(self.img),
@@ -73,7 +76,7 @@ class Elemento(Element):
 
         clone_mic = Elemento(self.img, tit=self.title, drag=True, style=style, cena=INVENTARIO)
         clone_mic.entra(INVENTARIO)
-        self.foi = lambda *_: None
+        self._do_foi = lambda *_: None
 
     @property
     def tit(self):
