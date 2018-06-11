@@ -35,3 +35,10 @@ AttributeError: 'Elemento' object has no attribute 'elt'
                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jun 11 2018 11:18:52.73 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  self._do_foi()
+  ^
+IndentationError: expected an indented block
+'''},
