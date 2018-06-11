@@ -137,9 +137,14 @@ class Elemento(Element):
             Texto(self.cena, "Hey, this is not my name: {}".format(tit)).vai()
             return False
         self.tit = tit
-        Texto(self.cena, "Finally, my correct name: {}".format(self.tit), foi=self.foi).vai()
+        Texto(self.cena, "Finally, my correct name: {}".format(self.tit)).vai()
         self.vai = Texto(self.cena, CORRECT.format(self.tit)).vai
         doc[src_id].remove()
+        self.do_drag(False)
+        # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
+        _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
+        self.vai = Texto(self.cena, _texto).vai
+        self._do_foi = lambda *_: None
 
 
 def geografia(oeste=False):
