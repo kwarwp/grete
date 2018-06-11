@@ -147,6 +147,9 @@ class Elemento(Element):
 
 GEO = None
 def geografia(oeste=False):
+    global GEO
+    if GEO:
+        return GEO
     def vai_trigo():
         from amanda.main import trigonometria
         trigonometria()
@@ -170,7 +173,7 @@ def geografia(oeste=False):
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
         foi=lambda *_: INVENTARIO.bota(pan)).vai)
     '''
-    _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
+    GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
     mic = Elemento(MIC, tit="sweep pan", drag=False, drop="microscope",
                    x=610, y=100, w=80, h=90,
                    cena=_sala.sul, texto="please, help me, fix my name")
@@ -183,12 +186,10 @@ def geografia(oeste=False):
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
 
-GEO = geografia()
 def geo_oeste():
     geografia(oeste=True)
 
 
 if __name__ == "__main__":
     INVENTARIO.inicia()
-    #geografia()
-    GEO.sul.vai()
+    geografia().sul.vai()
