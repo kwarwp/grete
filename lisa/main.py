@@ -51,7 +51,7 @@ def trigonometria():
         x =4, y = 240, w = 280, h = 390, drop="glow ball",
         cena=_sala.oeste, texto="please, help me, fix my name")
     pencil = Elemento(estojo, tit = "volcano", drag=True,
-        x = 160, y = 210, w = 180, h = 100, drop="earth globe",
+        x = 1060, y = 210, w = 180, h = 100, drop="earth globe",
         cena=_sala.leste, texto="please, help me, fix my name")
     '''
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
