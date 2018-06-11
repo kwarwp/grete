@@ -1,5 +1,5 @@
 # grete.amanda.main.py
-from _spy.vitollino.main import Cena,Texto,STYLE,Dragger, Droppable, INVENTARIO
+from _spy.vitollino.main import STYLE, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
@@ -13,12 +13,16 @@ trig_n  = "https://i.imgur.com/9ZcjTjb.jpg"
 trig_e  = "https://i.imgur.com/SyHdvjw.jpg"
 trig_s  = "https://i.imgur.com/ChRcEvB.jpg"
 trig_o  = "https://i.imgur.com/JD6oGRg.jpg"
-
+TRIG = None
 def trigonometria():
+    global TRIG
+    if TRIG:
+        return TRIG
+        
     def vai_geo():
         from naomi.main import geografia
-        geografia()
-
+        geografia().sul.vai()
+    '''
     # INVENTARIO.inicia()
     n_trig = Cena(trig_n)
     e_trig = Cena(trig_e, esquerda=n_trig)
@@ -26,22 +30,25 @@ def trigonometria():
     o_trig = Cena(trig_o, esquerda=s_trig, direita=n_trig)
     n_trig.esquerda, n_trig.direita = o_trig, e_trig
     s_trig.direita, e_trig.direita = o_trig, s_trig
+    '''
+    TRIG = _sala = (trig_n,trig_e,trig_s,trig_o, "trig")
     from naomi.main import Elemento
-    
+    _sala.sul.meio.vai = vai_geo
     vdgball = Elemento(ball, tit = "microscope", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="glow ball",
-        cena=o_trig, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="please, help me, fix my name")
     eglobe = Elemento(globe, tit = "volcano", drag=True,
         x = 160, y = 210, w = 80, h = 100, drop="earth globe",
-        cena=e_trig, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="please, help me, fix my name")
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
         x = 30, y = 500, w = 100, h = 120,
-        cena=e_trig, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="please, help me, fix my name")
     # txtchildren = Texto(n_trig,"please, help me")
     
-    n_trig.vai()
+    #n_trig.vai()
+    return _sala
 
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
-    trigonometria()
+    trigonometria().norte.vai()
