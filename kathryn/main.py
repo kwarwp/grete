@@ -47,5 +47,12 @@ def aventurasnaescola():
     class1.vai()
     
 aventurasnaescola()
+
+#ficha de prática ="https://i.imgur.com/n0hKsWn.jpg"
+#objeto vermelho não identificado ="https://i.imgur.com/a9OjfFD.jpg"
+#interruptor = "https://i.imgur.com/5P3D5pp.jpg"
+#tomada = "https://i.imgur.com/FWRj0jJ.jpg"
+#monitor = "https://i.imgur.com/RgsKMmR.jpg"
+#parapeito = "https://i.imgur.com/r1wZeyw.jpg"
     
      
