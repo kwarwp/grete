@@ -56,3 +56,7 @@ NameError: name 'INVENTARIO' is not defined
     vdgball = Elemento(ball, tit = "microscope", drag=True,
 NameError: name 'ball' is not defined
 '''},
+{'date': 'Mon Jun 11 2018 14:19:25.811 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: Illegal return statement>
+'''},
