@@ -1,31 +1,51 @@
 # grete.courtney.main.py
-from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO
+from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
-schoolhouse_n = "https://i.imgur.com/F8vDljG.jpg"
-schoolhouse_o = "https://i.imgur.com/Cy3pV4j.jpg"
-schoolhouse_s = "https://i.imgur.com/A0CmC45.jpg"
-schoolhouse_l = "https://i.imgur.com/wu3DN2C.jpg"
+school_house_n = "https://i.imgur.com/F8vDljG.jpg"
+school_house_o = "https://i.imgur.com/Cy3pV4j.jpg"
+school_house_s = "https://i.imgur.com/A0CmC45.jpg"
+school_house_l = "https://i.imgur.com/wu3DN2C.jpg"
 microwave = "https://i.imgur.com/Zp8ke2j.jpg"
 spray = "https://i.imgur.com/UHXzvdz.jpg"
 vase = "https://i.imgur.com/yBMisN8.jpg"
 ligth_fixture = "https://i.imgur.com/1yslKV5.jpg"
 dispenser = "https://i.imgur.com/o9raZp8.jpg"
 napkin_holder = "https://i.imgur.com/czetnka.jpg"
-
-def claudemilsonarevolta():
-    def vai_sckoolhouse():
+school_house = None
+def school_houser():
+    global school_house
+    if school_house:
+        return school_house
+        
+    def vai_geo():
         from naomi.main import geografia
-        geografia()
-        INVENTARIO.inicia()
-    n_schoolhouse = Cena(schoolhouse_n)
-    e_schoolhouse = Cena(schoolhouse_l, esquerda=n_schoolhouse)
-    s_schoolhouse = Cena(schoolhouse_s, esquerda=e_schoolhouse)
-    o_schoolhouse = Cena(schoolhouse_o, esquerda=s_schoolhouse, direita=n_schoolhouse)
-    n_schoolhouse.esquerda, n_schoolhouse.direita = o_schoolhouse, e_schoolhouse
-    s_schoolhouse.direita,e_schoolhouse.direita = o_schoolhouse, s_schoolhouse
+        geografia().sul.vai()
+    school_house = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
     from naomi.main import Elemento
-    n_schoolhouse.vai()
-    
-claudemilsonarevolta()
+    _sala.sul.meio.vai = vai_geo
+    napkin_holder_ = Elemento(napkin_holder, tit = "vase", drag=True,
+        x = 610, y = 140, w = 80, h = 90, drop="napkin_holder",
+        cena=_sala.oeste, texto="please, help me, fix my name")
+    microwave_ = Elemento(microwave, tit = "napkin_holder", drag=True,
+        x = 160, y = 210, w = 80, h = 100, drop="microwave",
+        cena=_sala.leste, texto="please, help me, fix my name")
+    spray_ = Elemento(spray, tit = "dispenser",
+        x = 30, y = 500, w = 100, h = 120, drop="spray",
+        cena=_sala.leste, texto="please, help me, fix my name")
+    vase_ = Elemento(vase, tit = "spray", drag=True,
+        x = 610, y = 140, w = 80, h = 90, drop="vase",
+        cena=_sala.oeste, texto="please, help me, fix my name")
+    ligth_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
+        x = 160, y = 210, w = 80, h = 100, drop="ligth_fixture",
+        cena=_sala.leste, texto="please, help me, fix my name")
+    dispenser_ = Elemento(dispenser, tit = "ligth_fixture",
+        x = 30, y = 500, w = 100, h = 120,drop="dispenser",
+        cena=_sala.leste, texto="please, help me, fix my name")
+    return _sala
+
+
+if __name__ == "__main__": 
+    INVENTARIO.inicia()
+    school_houser().norte.vai()
