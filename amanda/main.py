@@ -35,7 +35,7 @@ def trigonometria():
         x = 160, y = 210, w = 80, h = 100, drop="earth globe",
         cena=e_trig, texto="please, help me, fix my name")
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
-        x = 30, y = 500, w = 100, h = 120, drop="volcano",
+        x = 30, y = 500, w = 100, h = 120,
         cena=e_trig, texto="please, help me, fix my name")
     # txtchildren = Texto(n_trig,"please, help me")
     
