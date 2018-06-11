@@ -19,7 +19,7 @@ def trigonometria():
         from naomi.main import geografia
         geografia()
 
-    INVENTARIO.inicia()
+    # INVENTARIO.inicia()
     n_trig = Cena(trig_n)
     e_trig = Cena(trig_e, esquerda=n_trig)
     s_trig = Cena(trig_s, esquerda=e_trig, meio=Cena(vai=vai_geo))
@@ -33,17 +33,14 @@ def trigonometria():
     
     vdgball = Elemento(ball, tit = "earth globe", drag=True,
         x = 610, y = 140, w = 80, h = 90,
-        cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
-        foi=lambda: INVENTARIO.bota(vdgball)).vai)
+        cena=o_trig, texto="please, help me, fix my name")
     eglobe = Elemento(globe, tit = "volcano", drag=True,
         x = 160, y = 210, w = 80, h = 100,
-        cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
-        foi=lambda: INVENTARIO.bota(eglobe)).vai)
+        cena=e_trig, texto="please, help me, fix my name")
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
         x = 30, y = 500, w = 100, h = 120,
-        cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
-        foi=lambda: INVENTARIO.bota(eglobe)).vai)
-    txtchildren = Texto(n_trig,"please, help me")
+        cena=e_trig, texto="please, help me, fix my name")
+    # txtchildren = Texto(n_trig,"please, help me")
     
     n_trig.vai()
 
