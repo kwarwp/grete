@@ -137,3 +137,10 @@ NameError: name 'keyboard' is not defined
         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jun 11 2018 15:37:13.56 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 42
+  x = 260, y = 410, w = 80, h = 100, drop="clips",
+  ^
+IndentationError: unexpected indent
+'''},
