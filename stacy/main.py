@@ -27,3 +27,13 @@ def dogatthebeach():
     
     
 dogatthebeach()
+# gymnasium1 = "https://i.imgur.com/SAjYpW5.jpg"
+# "https://i.imgur.com/kdnYpkh.jpg"
+# ""
+# "https://i.imgur.com/RVIqCjp.jpg"
+# poste = "https://i.imgur.com/Jk68bvK.jpg"
+# bola = " https://i.imgur.com/bMUHNdH.jpg"
+# arquibancada = "https://i.imgur.com/6PYwS0s.jpg"
+# trave = "https://i.imgur.com/befIyyM.jpg"
+# grade = "https://i.imgur.com/4g9dJdv.jpg"
+# olofote = "https://i.imgur.com/U41sbtV.jpg"
