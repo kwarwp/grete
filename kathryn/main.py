@@ -8,6 +8,44 @@ CLASS4 = "https://i.imgur.com/m3UOcXX.jpg"
 CORACAO = "https://i.imgur.com/6UKpUyW.jpg"
 GLOBOS = "https://i.imgur.com/tzt1Ch4.jpg"
 LEON   = "https://i.imgur.com/zUhR9wk.jpg"
+# grete.amanda.main.py
+from _spy.vitollino.main import STYLE, INVENTARIO, Sala
+STYLE["width"] = 800
+STYLE["height"] = "600px"
+interruptor = "https://i.imgur.com/5P3D5pp.jpg"
+tomada = "https://i.imgur.com/FWRj0jJ.jpg"
+monitor = "https://i.imgur.com/RgsKMmR.jpg"
+parapeito = "https://i.imgur.com/r1wZeyw.jpg"
+TRIG = None
+def trigonometria():
+    global TRIG
+    if TRIG:
+        return TRIG
+        
+    def vai_geo():
+        from naomi.main import geografia
+        geografia().sul.vai()
+    TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
+    from naomi.main import Elemento
+    _sala.sul.meio.vai = vai_geo
+    parap = Elemento(parapeito, tit = "microscope", drag=True,
+        x = 610, y = 240, w = 80, h = 90, drop="glow ball",
+        cena=_sala.norte, texto="please, help me, fix my name")
+    '''
+    eglobe = Elemento(globe, tit = "volcano", drag=True,
+        x = 160, y = 210, w = 80, h = 100, drop="earth globe",
+        cena=_sala.leste, texto="please, help me, fix my name")
+    volc = Elemento(volcano, tit = "glow ball", drop="volcano",
+        x = 30, y = 500, w = 100, h = 120,
+        cena=_sala.leste, texto="please, help me, fix my name")
+    '''
+    return _sala
+
+
+if __name__ == "__main__": 
+    INVENTARIO.inicia()
+    trigonometria().norte.vai()
+'''
 def aventurasnaescola():
     def gogeo(): 
         from naomi.main import geo_west
@@ -30,7 +68,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÃÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÃÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
@@ -54,5 +92,5 @@ aventurasnaescola()
 #tomada = "https://i.imgur.com/FWRj0jJ.jpg"
 #monitor = "https://i.imgur.com/RgsKMmR.jpg"
 #parapeito = "https://i.imgur.com/r1wZeyw.jpg"
-    
+'''
      
