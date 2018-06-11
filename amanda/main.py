@@ -22,15 +22,6 @@ def trigonometria():
     def vai_geo():
         from naomi.main import geografia
         geografia().sul.vai()
-    '''
-    # INVENTARIO.inicia()
-    n_trig = Cena(trig_n)
-    e_trig = Cena(trig_e, esquerda=n_trig)
-    s_trig = Cena(trig_s, esquerda=e_trig, meio=Cena(vai=vai_geo))
-    o_trig = Cena(trig_o, esquerda=s_trig, direita=n_trig)
-    n_trig.esquerda, n_trig.direita = o_trig, e_trig
-    s_trig.direita, e_trig.direita = o_trig, s_trig
-    '''
     TRIG = _sala = Sala(trig_n,trig_e,trig_s,trig_o, "trig")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
@@ -43,9 +34,6 @@ def trigonometria():
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
         x = 30, y = 500, w = 100, h = 120,
         cena=_sala.leste, texto="please, help me, fix my name")
-    # txtchildren = Texto(n_trig,"please, help me")
-    
-    #n_trig.vai()
     return _sala
 
 
