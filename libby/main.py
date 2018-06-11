@@ -13,3 +13,15 @@ def boyfriendsatthecamp():
     
     
 loversatthecamp()
+
+#OFFICE1 = "https://imgur.com/gallery/88uA2AT?s=wa"
+# "https://i.imgur.com/9Vg7DzJ.jpg"
+# "https://i.imgur.com/haPQ4rZ.jpg"
+# "https://i.imgur.com/Ax1XDBU.jpg"
+#OBJECTS
+# tomada = "https://i.imgur.com/l6INRuQ.jpg"
+# interruptor = "https://i.imgur.com/olpkjL0.jpg"
+# interfone = "https://i.imgur.com/4s1Pbpv.jpg"
+# extintor = "https://i.imgur.com/AJzKYaE.jpg"
+# garrafa térmica = "https://i.imgur.com/M9oUgH6.jpg"
+# bebedouro = "https://i.imgur.com/GDRYgs3.jpg"
