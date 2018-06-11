@@ -29,13 +29,13 @@ def trigonometria():
     from naomi.main import Elemento
     
     vdgball = Elemento(ball, tit = "earth globe", drag=True,
-        x = 610, y = 140, w = 80, h = 90,
+        x = 610, y = 140, w = 80, h = 90, drop="glow ball",
         cena=o_trig, texto="please, help me, fix my name")
     eglobe = Elemento(globe, tit = "volcano", drag=True,
-        x = 160, y = 210, w = 80, h = 100,
+        x = 160, y = 210, w = 80, h = 100, drop="earth globe",
         cena=e_trig, texto="please, help me, fix my name")
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
-        x = 30, y = 500, w = 100, h = 120,
+        x = 30, y = 500, w = 100, h = 120, drop="volcano",
         cena=e_trig, texto="please, help me, fix my name")
     # txtchildren = Texto(n_trig,"please, help me")
     
