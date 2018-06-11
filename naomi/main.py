@@ -152,7 +152,7 @@ def geografia(oeste=False):
         return GEO
     def vai_trigo():
         from amanda.main import trigonometria
-        trigonometria()
+        trigonometria().norte.vai()
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     '''
 
