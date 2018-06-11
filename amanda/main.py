@@ -27,9 +27,6 @@ def trigonometria():
     n_trig.esquerda, n_trig.direita = o_trig, e_trig
     s_trig.direita, e_trig.direita = o_trig, s_trig
     from naomi.main import Elemento
-    chistyle = dict(left = 610, top = 140, width = 80, maxHeight = "90px")
-    globstyle = dict(left = 160, top = 210, width = 80, maxHeight = "100px")
-    volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
     
     vdgball = Elemento(ball, tit = "earth globe", drag=True,
         x = 610, y = 140, w = 80, h = 90,
@@ -46,4 +43,5 @@ def trigonometria():
 
 
 if __name__ == "__main__": 
+    INVENTARIO.inicia()
     trigonometria()
