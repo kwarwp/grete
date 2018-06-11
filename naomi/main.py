@@ -1,5 +1,5 @@
 # grete.naomi.main.py
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE, PSTYLE, EIMGSTY
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE, PSTYLE, EIMGSTY, Sala
 from _spy.vitollino.main import Elemento as Element
 from browser import html, doc
 
@@ -145,11 +145,13 @@ class Elemento(Element):
         self.vai = Texto(self.cena, _texto).vai
         self._do_foi = lambda *_: None
 
-
+GEO = None
 def geografia(oeste=False):
     def vai_trigo():
         from amanda.main import trigonometria
         trigonometria()
+    panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
+    '''
 
     n_geo = Cena(NGEO, meio=Cena(vai=vai_trigo))
     e_geo = Cena(LGEO, esquerda=n_geo)
@@ -158,9 +160,7 @@ def geografia(oeste=False):
     n_geo.esquerda, n_geo.direita = o_geo, e_geo
     s_geo.direita, e_geo.direita = o_geo, s_geo
     # micstyle = dict(left=610, top=100, width=80, maxHeight="90px")
-    panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     # volcstyle = dict(left=30, top=500, width=100, maxHeight="120px")
-    '''
     mic = Elemento(MIC, tit = "sweep pan", drag=False,
         x = 610, y = 100, w = 80, h = 90,
         cena=s_geo, vai=lambda *_: Texto(s_geo,"please, help me, fix my name",
@@ -170,22 +170,25 @@ def geografia(oeste=False):
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
         foi=lambda *_: INVENTARIO.bota(pan)).vai)
     '''
+    _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
     mic = Elemento(MIC, tit="sweep pan", drag=False, drop="microscope",
                    x=610, y=100, w=80, h=90,
-                   cena=s_geo, texto="please, help me, fix my name")
+                   cena=_sala.sul, texto="please, help me, fix my name")
     # mic.do_drag(False)
     pan = Elemento(PAN, tit="earth globe", drag=False, drop="sweep pan",
                    x=750, y=110, w=50, h=230,
-                   style=panstyle, cena=e_geo, texto="please, help me, fix my name")
+                   style=panstyle, cena=_sala.leste, texto="please, help me, fix my name")
     _ = mic, pan
+    _sala.norte.meio.vai = vai_trigo
+    return _sala
+    # o_geo.vai() if oeste else s_geo.vai()
 
-    o_geo.vai() if oeste else s_geo.vai()
-
-
+GEO = geografia()
 def geo_oeste():
     geografia(oeste=True)
 
 
 if __name__ == "__main__":
     INVENTARIO.inicia()
-    geografia()
+    #geografia()
+    GEO.sul.vai()
