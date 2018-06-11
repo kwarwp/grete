@@ -167,7 +167,7 @@ def geografia(oeste=False):
                    x=610, y=100, w=80, h=90,
                    cena=s_geo, texto="please, help me, fix my name")
     # mic.do_drag(False)
-    pan = Elemento(PAN, tit="microscope", drag=False, drop="sweep pan",
+    pan = Elemento(PAN, tit="earth globe", drag=False, drop="sweep pan",
                    x=750, y=110, w=50, h=230,
                    style=panstyle, cena=e_geo, texto="please, help me, fix my name")
     _ = mic, pan
