@@ -26,3 +26,9 @@ def dogatthebeach():
     
     
 dogatthebeach()
+
+#borrifador = "https://i.imgur.com/PVBd6Zb.jpg"
+#vassoura = "https://i.imgur.com/mvUeaEl.jpg"
+#ampulheta = "https://i.imgur.com/cJA5pJD.jpg"
+#envelope = "https://i.imgur.com/GmMIxkq.jpg"
+#estojo = "https://i.imgur.com/Xz0C6PL.jpg"
