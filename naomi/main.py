@@ -60,7 +60,7 @@ class Elemento(Element):
         self.do_drop(drop)
 
     def foi(self):
-    self._do_foi()
+        self._do_foi()
 
     def _do_foi(self):
         style = {'opacity': "inherited", 'width': 30, 'height': "30px", 'min-height': '30px', 'float': 'left',
