@@ -10,9 +10,9 @@ schoolhouse_l = "https://i.imgur.com/wu3DN2C.jpg"
 microwave = "https://i.imgur.com/Zp8ke2j.jpg"
 spray = "https://i.imgur.com/UHXzvdz.jpg"
 vase = "https://i.imgur.com/yBMisN8.jpg"
-ligth fixture = "https://i.imgur.com/1yslKV5.jpg"
+ligth_fixture = "https://i.imgur.com/1yslKV5.jpg"
 dispenser = "https://i.imgur.com/o9raZp8.jpg"
-napkin holder = "https://i.imgur.com/czetnka.jpg"
+napkin_holder = "https://i.imgur.com/czetnka.jpg"
 
 def claudemilsonarevolta():
     def vai_sckoolhouse():
