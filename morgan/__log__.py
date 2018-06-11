@@ -130,3 +130,10 @@ UnboundLocalError: local variable 'pipe' referenced before assignment
     keyboard_ = Elemento(keyboard, tit = "clip", drop="keyboard",
 NameError: name 'keyboard' is not defined
 '''},
+{'date': 'Mon Jun 11 2018 15:36:46.713 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 41
+  foor lock = Elemento(clips, tit = "keyboard", drag=True,
+        ^
+SyntaxError: invalid syntax
+'''},
