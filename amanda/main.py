@@ -31,7 +31,7 @@ def trigonometria():
     n_trig.esquerda, n_trig.direita = o_trig, e_trig
     s_trig.direita, e_trig.direita = o_trig, s_trig
     '''
-    TRIG = _sala = (trig_n,trig_e,trig_s,trig_o, "trig")
+    TRIG = _sala = Sala(trig_n,trig_e,trig_s,trig_o, "trig")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
     vdgball = Elemento(ball, tit = "microscope", drag=True,
