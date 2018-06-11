@@ -138,7 +138,6 @@ class Elemento(Element):
             return False
         self.tit = tit
         Texto(self.cena, "Finally, my correct name: {}".format(self.tit)).vai()
-        self.vai = Texto(self.cena, CORRECT.format(self.tit)).vai
         doc[src_id].remove()
         self.do_drag(False)
         # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
