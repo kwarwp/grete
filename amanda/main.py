@@ -28,7 +28,7 @@ def trigonometria():
     s_trig.direita, e_trig.direita = o_trig, s_trig
     from naomi.main import Elemento
     
-    vdgball = Elemento(ball, tit = "earth globe", drag=True,
+    vdgball = Elemento(ball, tit = "microscope", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="glow ball",
         cena=o_trig, texto="please, help me, fix my name")
     eglobe = Elemento(globe, tit = "volcano", drag=True,
