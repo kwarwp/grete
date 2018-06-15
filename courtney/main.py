@@ -26,20 +26,20 @@ def school_houser():
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
     napkin_holder_ = Elemento(napkin_holder, tit = "vase", drag=True,
-        x = 610, y = 140, w = 80, h = 90, drop="napkin_holder",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        x = 310, y = 450, w = 70, h = 60, drop="napkin_holder",
+        cena=_sala.norte, texto="please, help me, fix my name")
     microwave_ = Elemento(microwave, tit = "napkin_holder", drag=True,
         x = 160, y = 210, w = 80, h = 100, drop="microwave",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="please, help me, fix my name")
     spray_ = Elemento(spray, tit = "dispenser",
-        x = 30, y = 500, w = 100, h = 120, drop="spray",
+        x = 30, y = 500, w = 1000, h = 50, drop="spray",
         cena=_sala.leste, texto="please, help me, fix my name")
     vase_ = Elemento(vase, tit = "spray", drag=True,
-        x = 610, y = 140, w = 80, h = 90, drop="vase",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        x = 300, y = 275, w = 100, h = 140, drop="vase",
+        cena=_sala.norte, texto="please, help me, fix my name")
     ligth_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
         x = 160, y = 210, w = 80, h = 100, drop="ligth_fixture",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="please, help me, fix my name")
     dispenser_ = Elemento(dispenser, tit = "ligth_fixture",
         x = 30, y = 500, w = 100, h = 120,drop="dispenser",
         cena=_sala.leste, texto="please, help me, fix my name")
