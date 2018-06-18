@@ -34,7 +34,7 @@ def trigonometria():
   - Manifestation on the street Dr. poop my pants.
  The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
    - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
-  He tired of all Claudemilson’s and decide go sleep.
+  He tired of all Claudemilson's and decide go sleep.
   Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
   - has a manifestation here the peoples are screaming: BECAME CLAUDEMILSON!!!!!!!!!!!!!!"""
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
