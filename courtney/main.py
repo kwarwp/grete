@@ -32,7 +32,7 @@ def school_houser():
         x = 160, y = 210, w = 80, h = 100, drop="microwave",
         cena=_sala.oeste, texto="please, help me, fix my name")
     spray_ = Elemento(spray, tit = "dispenser",
-        x = 30, y = 500, w = 1000, h = 50, drop="spray",
+        x = 360, y = 70, w = 80, h = 70, drop="spray",
         cena=_sala.leste, texto="please, help me, fix my name")
     vase_ = Elemento(vase, tit = "spray", drag=True,
         x = 300, y = 275, w = 100, h = 140, drop="vase",
