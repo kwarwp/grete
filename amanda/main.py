@@ -13,7 +13,7 @@ trig_n  = "https://i.imgur.com/9ZcjTjb.jpg"
 trig_e  = "https://i.imgur.com/SyHdvjw.jpg"
 trig_s  = "https://i.imgur.com/ChRcEvB.jpg"
 trig_o  = "https://i.imgur.com/JD6oGRg.jpg"
-hq = "https://imgur.com/hib4z1f,jpg"
+hq = "https://imgur.com/hib4z1f.jpg"
 TRIG = None
 def trigonometria():
     global TRIG
