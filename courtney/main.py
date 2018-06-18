@@ -29,7 +29,7 @@ def school_houser():
         x = 310, y = 450, w = 70, h = 60, drop="napkin_holder",
         cena=_sala.norte, texto="please, help me, fix my name")
     microwave_ = Elemento(microwave, tit = "napkin_holder", drag=True,
-        x = 160, y = 210, w = 80, h = 100, drop="microwave",
+        x = 430, y = 100, w = 200, h = 150, drop="microwave",
         cena=_sala.oeste, texto="please, help me, fix my name")
     spray_ = Elemento(spray, tit = "dispenser",
         x = 360, y = 70, w = 80, h = 70, drop="spray",
