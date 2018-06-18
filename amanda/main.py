@@ -1,5 +1,5 @@
 # grete.amanda.main.py
-from _spy.vitollino.main import STYLE, INVENTARIO, Sala
+from _spy.vitollino.main import STYLE, INVENTARIO, Sala, Texto
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
@@ -13,15 +13,28 @@ trig_n  = "https://i.imgur.com/9ZcjTjb.jpg"
 trig_e  = "https://i.imgur.com/SyHdvjw.jpg"
 trig_s  = "https://i.imgur.com/ChRcEvB.jpg"
 trig_o  = "https://i.imgur.com/JD6oGRg.jpg"
+hq = "https://imgur.com/hib4z1f"
 TRIG = None
 def trigonometria():
     global TRIG
     if TRIG:
         return TRIG
         
-    def vai_geo():
+    def _foi_geo():
         from naomi.main import geografia
         geografia().sul.vai()
+        
+    def _vai_geo():
+        def redir():
+            historia.esquerda.vai = historia.direita.vai = historia.meio .vai = _foi_geo
+            _vai_geo = _foi_geo
+        historia = Cena(hq)
+        historia.esquerda.vai = historia.direita.vai = historia.meio .vai = Texto(texto, foi=redir).vai
+        from naomi.main import geografia
+        geografia().sul.vai()
+        
+    def vai_geo():
+        _vai_geo()
     TRIG = _sala = Sala(trig_n,trig_e,trig_s,trig_o, "trig")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
