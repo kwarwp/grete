@@ -15,9 +15,9 @@ def boyfriendsatthecamp():
 loversatthecamp()
 '''
 sn = "https://i.imgur.com/evlSZig.jpg"
-sl = "https://i.imgur.com/9Vg7DzJ.jpg"
-ss = "https://i.imgur.com/haPQ4rZ.jpg"
-so = "https://i.imgur.com/Ax1XDBU.jpg"
+sl = "https://i.imgur.com/Ax1XDBU.jpg"
+ss = "https://i.imgur.com/9Vg7DzJ.jpg"
+so = "https://i.imgur.com/haPQ4rZ.jpg"
 #OBJECTS
 tomada = "https://i.imgur.com/l6INRuQ.jpg"
 interruptor = "https://i.imgur.com/olpkjL0.jpg"
@@ -48,8 +48,8 @@ def trigonometria():
         try:
             geografia().sul.vai()
         except:
-            from naomi.main import geografia
-            geografia().sul.vai()
+            from stacy.main import trigonometria as tg
+            tg().sul.vai()
         
     def _vai_geo():
         TRIG.sul.meio.vai = _foi_geo
