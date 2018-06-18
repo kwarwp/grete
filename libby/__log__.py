@@ -89,3 +89,7 @@ IndentationError: unexpected indent
 'error': '''
 Exception: <SyntaxError: return not in function>
 '''},
+{'date': 'Mon Jun 18 2018 15:24:59.294 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: return not in function>
+'''},
