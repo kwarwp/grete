@@ -108,3 +108,10 @@ NameError: name 'Sala' is not defined
     vdgball = Elemento(ball, tit = "microscope", drag=True,
 NameError: name 'ball' is not defined
 '''},
+{'date': 'Mon Jun 18 2018 14:36:16.673 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  INVENTARIO.inicia()
+  ^
+IndentationError: unexpected indent
+'''},
