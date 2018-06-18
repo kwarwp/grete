@@ -19,11 +19,11 @@ sl = "https://i.imgur.com/9Vg7DzJ.jpg"
 ss = "https://i.imgur.com/haPQ4rZ.jpg"
 so = "https://i.imgur.com/Ax1XDBU.jpg"
 #OBJECTS
-# tomada = "https://i.imgur.com/l6INRuQ.jpg"
-# interruptor = "https://i.imgur.com/olpkjL0.jpg"
-# interfone = "https://i.imgur.com/4s1Pbpv.jpg"
-# extintor = "https://i.imgur.com/AJzKYaE.jpg"
-# garrafa térmica = "https://i.imgur.com/M9oUgH6.jpg"
+tomada = "https://i.imgur.com/l6INRuQ.jpg"
+interruptor = "https://i.imgur.com/olpkjL0.jpg"
+interfone = "https://i.imgur.com/4s1Pbpv.jpg"
+extintor = "https://i.imgur.com/AJzKYaE.jpg"
+garrafa_termica = "https://i.imgur.com/M9oUgH6.jpg"
 bebedouro = "https://i.imgur.com/GDRYgs3.jpg"
         
 # grete.amanda.main.py
@@ -53,7 +53,7 @@ def trigonometria():
         
     def _vai_geo():
         TRIG.sul.meio.vai = _foi_geo
-        _vai = Cena(hq)
+        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
         def redir():
             _vai.vai = _foi_geo
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
@@ -72,13 +72,13 @@ def trigonometria():
     TRIG = _sala = Sala(sn,sl,ss,so, "trig")
     from naomi.main import Elemento
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
-    vdgball = Elemento(ball, tit = "microscope", drag=True,
-        x = 610, y = 140, w = 80, h = 90, drop="glow ball",
+    vdgball = Elemento(tomada, tit = "microscope", drag=True,
+        x = 610, y = 140, w = 80, h = 90, drop="power outlet",
         cena=_sala.oeste, texto="please, help me, fix my name")
-    eglobe = Elemento(globe, tit = "volcano", drag=True,
-        x = 160, y = 210, w = 80, h = 100, drop="earth globe",
+    eglobe = Elemento(bebedouro, tit = "volcano", drag=True,
+        x = 160, y = 210, w = 80, h = 100, drop="drink fountain",
         cena=_sala.leste, texto="please, help me, fix my name")
-    volc = Elemento(volcano, tit = "glow ball", drop="volcano",
+    volc = Elemento(extintor, tit = "glow ball", drop="fire extinguisher",
         x = 30, y = 500, w = 100, h = 120,
         cena=_sala.leste, texto="please, help me, fix my name")
     return _sala
