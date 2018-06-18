@@ -21,8 +21,13 @@ def trigonometria():
         return TRIG
         
     def _foi_geo():
-        from naomi.main import geografia
-        geografia().sul.vai()
+        TRIG.sul.vai()
+        return
+        try:
+            geografia().sul.vai()
+        except:
+            from naomi.main import geografia
+            geografia().sul.vai()
         
     def _vai_geo():
         _vai_geo = _foi_geo
