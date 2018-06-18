@@ -13,7 +13,7 @@ trig_n  = "https://i.imgur.com/9ZcjTjb.jpg"
 trig_e  = "https://i.imgur.com/SyHdvjw.jpg"
 trig_s  = "https://i.imgur.com/ChRcEvB.jpg"
 trig_o  = "https://i.imgur.com/JD6oGRg.jpg"
-hq = "https://i.imgur.com/yX187fL.jpg"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
 TRIG = None
 def trigonometria():
     global TRIG
@@ -32,7 +32,7 @@ def trigonometria():
         _vai = Cena(hq)
         def redir():
             _vai.vai = _foi_geo
-        historia = Cena(hq, _vai, _vai, _vai)
+        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
   - Manifestation on the street Dr. poop my pants.
  The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
