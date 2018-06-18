@@ -38,7 +38,7 @@ def school_houser():
         x = 300, y = 275, w = 100, h = 140, drop="vase",
         cena=_sala.norte, texto="please, help me, fix my name")
     ligth_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
-        x = 160, y = 210, w = 80, h = 100, drop="ligth_fixture",
+        x = 50, y = 40, w = 100, h = 100, drop="ligth_fixture",
         cena=_sala.sul, texto="please, help me, fix my name")
     dispenser_ = Elemento(dispenser, tit = "ligth_fixture",
         x = 30, y = 500, w = 100, h = 120,drop="dispenser",
