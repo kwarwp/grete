@@ -73,7 +73,7 @@ def trigonometria():
     from naomi.main import Elemento
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
     vdgball = Elemento(bebedouro, tit = "microscope", drag=True,
-        x = 610, y = 140, w = 80, h = 90, drop="power outlet",
+        x = 610, y = 192, w = 80, h = 90, drop="power outlet",
         cena=_sala.sul, texto="please, help me, fix my name")
     eglobe = Elemento(tomada, tit = "volcano", drag=True,
         x = 185, y = 30, w = 80, h = 100, drop="drink fountain",
@@ -82,9 +82,9 @@ def trigonometria():
         x = 30, y = 500, w = 100, h = 120,
         cena=_sala.leste, texto="please, help me, fix my name")
     garter = Elemento(garrafa_termica, tit = "fire_extinguisher", drag=True,
-        x = 100, y = 300, w = 200, h = 110,
+        x = 100, y = 200, w = 100, h = 80,
         cena=_sala.sul, texto="please, help me, fix my name")
-return _sala
+    return _sala
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
