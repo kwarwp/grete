@@ -25,13 +25,13 @@ def trigonometria():
         geografia().sul.vai()
         
     def _vai_geo():
+        _vai = Cena()
         def redir():
-            historia.esquerda.vai = historia.direita.vai = historia.meio .vai = _foi_geo
+            _vai.vai = _foi_geo
             _vai_geo = _foi_geo
-        historia = Cena(hq)
-        historia.esquerda.vai = historia.direita.vai = historia.meio .vai = Texto(texto, foi=redir).vai
-        from naomi.main import geografia
-        geografia().sul.vai()
+        historia = Cena(hq, _vai, _vai, _vai)
+        _vai.vai = Texto(texto, foi=redir).vai
+        historia.vai()
         
     def vai_geo():
         _vai_geo()
