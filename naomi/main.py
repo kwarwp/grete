@@ -182,7 +182,7 @@ def geografia(oeste=False):
                    x=750, y=110, w=50, h=230,
                    style=panstyle, cena=_sala.leste, texto="please, help me, fix my name")
     _ = mic, pan
-    _sala.norte.meio.vai = vai_trigo
+    #_sala.norte.meio = Cena(vai=vai_trigo)
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
 
