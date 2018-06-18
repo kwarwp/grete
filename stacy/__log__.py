@@ -49,3 +49,10 @@ NameError: name 'INVENTARIO' is not defined
     s_trig = Cena(CLASS23C, esquerda=e_trig, meio=Cena(vai=vai_geo))
 NameError: name 'vai_geo' is not defined
 '''},
+{'date': 'Mon Jun 18 2018 14:14:12.351 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  INVENTARIO.inicia()
+  ^
+IndentationError: unexpected indent
+'''},
