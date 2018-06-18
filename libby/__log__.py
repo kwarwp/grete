@@ -78,3 +78,10 @@ Exception: <SyntaxError: Illegal return statement>
     _sala.sul.meio = Cena(hq, vai = vai_geo)
 NameError: name 'hq' is not defined
 '''},
+{'date': 'Mon Jun 18 2018 15:24:00.424 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 87
+  return _sala
+  ^
+IndentationError: unexpected indent
+'''},
