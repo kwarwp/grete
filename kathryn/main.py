@@ -29,12 +29,20 @@ def trigonometria():
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
     parap = Elemento(parapeito, tit = "microscope", drag=True,
-        x = 610, y = 240, w = 80, h = 90, drop="glow ball",
-        cena=_sala.norte, texto="please, help me, fix my name")
+        x = 610, y = 300, w = 80, h = 90, drop="glow ball",
+        cena=_sala.norte, texto="Ai")
    
     interr = Elemento(interruptor, tit = "inter", drag=True,
-        x = 500, y = 210, w = 80, h = 100, drop="earth globe",
+        x = 360, y = 160, w = 40, h = 70, drop="earth globe",
         cena=_sala.leste, texto="please, help me, fix my name")
+    
+    toma = Elemento(tomada, tit = "tomada", drag=True,
+        x = 100, y = 300, w = 60, h = 70, drop="earth globe",
+        cena=_sala.sul, texto="please, help me, fix my name")
+        
+    mono = Elemento(monitor, tit = "monitor", drag=True,
+        x = 105, y = 335, w = 90, h = 80, drop="earth globe",
+        cena=_sala.oeste, texto="please, help me, fix my name")
     
     return _sala
 
