@@ -20,3 +20,10 @@ SyntaxError: EOL while scanning string literal
                                           ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Jun 18 2018 15:37:47.203 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  grandstand = "https://i.imgur.com/6PYwS0s.jpg”
+                                                ^
+SyntaxError: EOL while scanning string literal
+'''},
