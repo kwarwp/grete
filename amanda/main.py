@@ -1,5 +1,5 @@
 # grete.amanda.main.py
-from _spy.vitollino.main import STYLE, INVENTARIO, Sala, Texto
+from _spy.vitollino.main import STYLE, INVENTARIO, Sala, Texto, Cena
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
@@ -25,10 +25,10 @@ def trigonometria():
         geografia().sul.vai()
         
     def _vai_geo():
-        _vai = Cena()
+        _vai = Cena(hq)
+        _vai_geo = _foi_geo
         def redir():
             _vai.vai = _foi_geo
-            _vai_geo = _foi_geo
         historia = Cena(hq, _vai, _vai, _vai)
         texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
   - Manifestation on the street Dr. poop my pants.
@@ -44,7 +44,7 @@ def trigonometria():
         _vai_geo()
     TRIG = _sala = Sala(trig_n,trig_e,trig_s,trig_o, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_geo
+    _sala.sul.meio = Cena(hq, vai = vai_geo)
     vdgball = Elemento(ball, tit = "microscope", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="glow ball",
         cena=_sala.oeste, texto="please, help me, fix my name")
