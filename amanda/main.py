@@ -30,7 +30,7 @@ def trigonometria():
             geografia().sul.vai()
         
     def _vai_geo():
-        _vai_geo = _foi_geo
+        TRIG.sul.meio.vai = _foi_geo
         _vai = Cena(hq)
         def redir():
             _vai.vai = _foi_geo
