@@ -85,3 +85,7 @@ NameError: name 'hq' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jun 18 2018 15:24:47.418 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: return not in function>
+'''},
