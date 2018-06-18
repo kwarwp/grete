@@ -6,7 +6,7 @@ STYLE["height"] = "600px"
 BEACH = "http://casadeluxoemcamboinhas.com.br/wp-content/uploads/2015/01/28506.jpg"
 FUNNYDOG = "https://image.redbull.com/rbcom/052/2017-09-01/6aef5132-28d4-418e-a85e-28e102b1cb22/0010/1/1500/1000/1/gente%2C-qual-a-necessidade-disso%3F.png"
 DOLLYNHO = "https://lh3.ggpht.com/vshyoy6DTJtuLpXrqKesDJkJebNmpq7yTI-HUr7ICZ_jOe_xXBEWaGmYDrnbVDZxwA=w300"
-CLASS23A = ""
+CLASS23A = "https://i.imgur.com/8P2mYxE.jpg"
 CLASS23B = "https://i.imgur.com/N5A2DAb.jpg"
 CLASS23C = "https://i.imgur.com/zP65MT5.jpg"
 CLASS23D = "https://i.imgur.com/NLkvCsx.jpg"
@@ -35,18 +35,41 @@ vassoura = "https://i.imgur.com/mvUeaEl.jpg"
 ampulheta = "https://i.imgur.com/cJA5pJD.jpg"
 envelope = "https://i.imgur.com/GmMIxkq.jpg"
 estojo = "https://i.imgur.com/Xz0C6PL.jpg"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
 TRIG = None
 def trigonometria():
     global TRIG
     if TRIG:
         return TRIG
         
+    def _foi_geo():
+        try:
+            geografia().sul.vai()
+        except:
+            from naomi.main import geografia
+            geografia().sul.vai()
+        
+    def _vai_geo():
+        TRIG.sul.meio.vai = _foi_geo
+        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        def redir():
+            _vai.vai = _foi_geo
+        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
+  - Manifestation on the street Dr. poop my pants.
+ The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
+   - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
+  He tired of all Claudemilson's and decide go sleep.
+  Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
+  - has a manifestation here the peoples are screaming: BECAME CLAUDEMILSON!!!!!!!!!!!!!!"""
+        _vai.vai = Texto(historia, '', texto, foi=redir).vai
+        historia.vai()
+        
     def vai_geo():
-        from naomi.main import geografia
-        geografia().sul.vai()
+        _vai_geo()
     TRIG = _sala = Sala(CLASS23A,CLASS23B,CLASS23C,CLASS23D, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_geo
+    _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
     sweeper = Elemento(vassoura, tit = "microscope", drag=True,
         x =4, y = 240, w = 280, h = 390, drop="glow ball",
         cena=_sala.oeste, texto="please, help me, fix my name")
