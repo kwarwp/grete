@@ -29,7 +29,7 @@ def trigonometria():
         
     def _vai_geo():
         TRIG.sul.meio.vai = _foi_geo
-        _vai = Cena(hq)
+        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
         def redir():
             _vai.vai = _foi_geo
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
