@@ -34,7 +34,7 @@ def trigonometria():
    
     interr = Elemento(interruptor, tit = "inter", drag=True,
         x = 500, y = 210, w = 80, h = 100, drop="earth globe",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="please, help me, fix my name")
     
     return _sala
 
