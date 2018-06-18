@@ -31,14 +31,11 @@ def trigonometria():
     parap = Elemento(parapeito, tit = "microscope", drag=True,
         x = 610, y = 240, w = 80, h = 90, drop="glow ball",
         cena=_sala.norte, texto="please, help me, fix my name")
-    '''
-    eglobe = Elemento(globe, tit = "volcano", drag=True,
-        x = 160, y = 210, w = 80, h = 100, drop="earth globe",
-        cena=_sala.leste, texto="please, help me, fix my name")
-    volc = Elemento(volcano, tit = "glow ball", drop="volcano",
-        x = 30, y = 500, w = 100, h = 120,
-        cena=_sala.leste, texto="please, help me, fix my name")
-    '''
+   
+    interr = Elemento(interruptor, tit = "inter", drag=True,
+        x = 500, y = 210, w = 80, h = 100, drop="earth globe",
+        cena=_sala.sul, texto="please, help me, fix my name")
+    
     return _sala
 
 
@@ -68,7 +65,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÃÂÂÂÂÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÃÂÂÂÂÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
