@@ -10,7 +10,7 @@ school_house_l = "https://i.imgur.com/wu3DN2C.jpg"
 microwave = "https://i.imgur.com/Zp8ke2j.jpg"
 spray = "https://i.imgur.com/UHXzvdz.jpg"
 vase = "https://i.imgur.com/yBMisN8.jpg"
-ligth_fixture = "https://i.imgur.com/1yslKV5.jpg"
+light_fixture = "https://i.imgur.com/1yslKV5.jpg"
 dispenser = "https://i.imgur.com/o9raZp8.jpg"
 napkin_holder = "https://i.imgur.com/czetnka.jpg"
 school_house = None
@@ -37,10 +37,10 @@ def school_houser():
     vase_ = Elemento(vase, tit = "spray", drag=True,
         x = 300, y = 275, w = 100, h = 140, drop="vase",
         cena=_sala.norte, texto="please, help me, fix my name")
-    ligth_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
-        x = 50, y = 40, w = 100, h = 100, drop="ligth_fixture",
+    light_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
+        x = 50, y = 40, w = 100, h = 100, drop="light_fixture",
         cena=_sala.sul, texto="please, help me, fix my name")
-    dispenser_ = Elemento(dispenser, tit = "ligth_fixture",
+    dispenser_ = Elemento(dispenser, tit = "light_fixture",
         x = 330, y = 325, w = 30, h = 40,drop="dispenser",
         cena=_sala.leste, texto="please, help me, fix my name")
     return _sala
