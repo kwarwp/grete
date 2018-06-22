@@ -5,6 +5,5 @@ jogadordefutebol = "https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=im
 campodefutebol =  "https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj3rJO97ufbAhUCgZAKHbRzBGEQjRx6BAgBEAU&url=https%3A%2F%2Fpt.pngtree.com%2Ffreepng%2Fgreen-stadium-upload_3102997.html&psig=AOvVaw0KR-Wx4KXCtfI4k4yNabp0&ust=1529777235886748"
 
 def historia():
-	cenaCampo = Cena(img"https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj3rJO97ufbAhUCgZAKHbRzBGEQjRx6BAgBEAU&url=https%3A%2F%2Fpt.pngtree.com%2Ffreepng%2Fgreen-stadium-upload_3102997.html&psig=AOvVaw0KR-Wx4KXCtfI4k4yNabp0&ust=1529777235886748")
+	cenaCampo = Cena(img = "https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj3rJO97ufbAhUCgZAKHbRzBGEQjRx6BAgBEAU&url=https%3A%2F%2Fpt.pngtree.com%2Ffreepng%2Fgreen-stadium-upload_3102997.html&psig=AOvVaw0KR-Wx4KXCtfI4k4yNabp0&ust=1529777235886748")
 	cenaCampo.vai()
-Historia()
