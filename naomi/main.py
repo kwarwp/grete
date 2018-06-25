@@ -154,25 +154,6 @@ def geografia(oeste=False):
         from amanda.main import trigonometria
         trigonometria().norte.vai()
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
-    '''
-
-    n_geo = Cena(NGEO, meio=Cena(vai=vai_trigo))
-    e_geo = Cena(LGEO, esquerda=n_geo)
-    s_geo = Cena(SGEO, esquerda=e_geo)
-    o_geo = Cena(OGEO, esquerda=s_geo, direita=n_geo)
-    n_geo.esquerda, n_geo.direita = o_geo, e_geo
-    s_geo.direita, e_geo.direita = o_geo, s_geo
-    # micstyle = dict(left=610, top=100, width=80, maxHeight="90px")
-    # volcstyle = dict(left=30, top=500, width=100, maxHeight="120px")
-    mic = Elemento(MIC, tit = "sweep pan", drag=False,
-        x = 610, y = 100, w = 80, h = 90,
-        cena=s_geo, vai=lambda *_: Texto(s_geo,"please, help me, fix my name",
-        foi=mic.foi ).vai() )
-    pan = Elemento(PAN, tit = "microscope", drag=False, drop="sweep pan",
-        x = 750, y = 110, w = 50, h = 230,
-        style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
-        foi=lambda *_: INVENTARIO.bota(pan)).vai)
-    '''
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
     mic = Elemento(MIC, tit="sweep pan", drag=False, drop="microscope",
                    x=610, y=100, w=80, h=90,
