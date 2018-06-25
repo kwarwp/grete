@@ -38,24 +38,24 @@ volcano  = "https://i.imgur.com/4Y5aie8.jpg"
 globe  = "https://i.imgur.com/EQtHzod.jpg"
 ball  = "https://i.imgur.com/rBbRsFU.jpg"
 TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
-TRIG = None
-def trigonometria():
-    global TRIG
-    if TRIG:
-        return TRIG
+SECRETARY = None
+def secretary():
+    global SECRETARY
+    if SECRETARY:
+        return SECRETARY
         
-    def _foi_geo():
+    def _gone_secretary():
         try:
             geografia().sul.vai()
         except:
             from stacy.main import trigonometria as tg
             tg().sul.vai()
         
-    def _vai_geo():
-        TRIG.sul.meio.vai = _foi_geo
+    def _go_secretary():
+        SECRETARY.sul.meio.vai = _gone_secretary
         _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
         def redir():
-            _vai.vai = _foi_geo
+            _vai.vai = _gone_secretary
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
   - Manifestation on the street Dr. poop my pants.
@@ -67,25 +67,25 @@ def trigonometria():
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
-    def vai_geo():
-        _vai_geo()
+    def go_secretary():
+        _go_secretary()
     TRIG = _sala = Sala(sn,sl,ss,so, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
-    vdgball = Elemento(bebedouro, tit = "microscope", drag=True,
+    _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = go_secretary)
+    bebedouro_ = Elemento(bebedouro, tit = "microscope", drag=True,
         x = 610, y = 192, w = 80, h = 90, drop="power outlet",
         cena=_sala.sul, texto="please, help me, fix my name")
-    eglobe = Elemento(tomada, tit = "volcano", drag=True,
+    tomada_ = Elemento(tomada, tit = "volcano", drag=True,
         x = 185, y = 30, w = 80, h = 100, drop="drink fountain",
         cena=_sala.leste, texto="please, help me, fix my name")
-    volc = Elemento(extintor, tit = "glow ball", drop="fire extinguisher",
+    extintor_ = Elemento(extintor, tit = "glow ball", drop="fire extinguisher",
         x = 30, y = 500, w = 100, h = 120,
         cena=_sala.leste, texto="please, help me, fix my name")
-    garter = Elemento(garrafa_termica, tit = "fire_extinguisher", drag=True,
+    garrafa_termica_ = Elemento(garrafa_termica, tit = "fire_extinguisher", drag=True,
         x = 100, y = 200, w = 100, h = 80,
         cena=_sala.sul, texto="please, help me, fix my name")
     return _sala
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
-    trigonometria().norte.vai()
+    secretary().norte.vai()
