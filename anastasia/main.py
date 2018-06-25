@@ -8,20 +8,20 @@ grandstand = "https://i.imgur.com/6PYwS0s.jpg"
 reflector = "https://i.imgur.com/U41sbtV.jpg"
 light_post = "https://i.imgur.com/Jk68bvK.jpg"
 ball = "https://i.imgur.com/bMUHNdH.jpg"
-gimnasium_e = "https://i.imgur.com/RVIqCjp.jpg"
+gimnasium_o = "https://i.imgur.com/RVIqCjp.jpg"
 gimnasium_l = "https://i.imgur.com/kdnYpkh.jpg"
 gimnasium_n = "https://i.imgur.com/befIyyM.jpg"
 gimnasium_s = "https://i.imgur.com/5SnGZmp.jpg"
-gimnasium = None
+gimnasium_ = None
 def gimnasium():
-    global gimnasium
-    if gimnasium:
-        return gimnasium
+    global gimnasium_
+    if gimnasium_:
+        return gimnasium_
         
     def vai_geo():
         from naomi.main import geografia
         geografia().sul.vai()
-    school_house = _sala = Sala(gimnasium_n,gimnasium_l,gimnasium_s,gimnasium_o, "trig")
+    gimnasium_ = _sala = Sala(gimnasium_n,gimnasium_l,gimnasium_s,gimnasium_o, "trig")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
     children_ = Elemento(napkin_holder, tit = "reflector", drag=True,
