@@ -155,7 +155,7 @@ def geografia(oeste=False):
         trigonometria().norte.vai()
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
-    mic = Elemento(MIC, tit="sweep pan", drag=False, drop="microscope",
+    mic = Elemento(MIC, tit="volcano", drag=False, drop="microscope",
                    x=610, y=100, w=80, h=90,
                    cena=_sala.sul, texto="please, help me, fix my name")
     # mic.do_drag(False)
