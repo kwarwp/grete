@@ -142,7 +142,7 @@ class Elemento(Element):
         self.do_drag(False)
         # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
         _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
-        self.vai = Texto(self.cena, _texto).vai
+        self.vai = Texto(self.cena, _texto, foi=self.foi).vai
         #self._do_foi = lambda *_: None
 
 GEO = None
