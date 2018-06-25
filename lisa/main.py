@@ -61,7 +61,7 @@ def trigonometria():
    - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
   He tired of all Claudemilson's and decide go sleep.
   Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
-  - has a manifestation here the peoples are screaming: BECAME CLAUDEMILSON!!!!!!!!!!!!!!"""
+  - has a manifestation here the people are screaming: BECOME CLAUDEMILSON!!!!!!!!!!!!!!"""
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
@@ -70,17 +70,22 @@ def trigonometria():
     TRIG = _sala = Sala(CLASS23A,CLASS23B,CLASS23C,CLASS23D, "trig")
     from naomi.main import Elemento
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
-    sweeper = Elemento(vassoura, tit = "microscope", drag=True,
-        x =4, y = 240, w = 280, h = 390, drop="glow ball",
+    ampulheta = Elemento(vassoura, tit = "borrifador", drag=True,
+        x =4, y = 240, w = 280, h = 390, drop="ampulheta",
         cena=_sala.oeste, texto="please, help me, fix my name")
-    pencil = Elemento(estojo, tit = "volcano", drag=True,
-        x = 260, y = 410, w = 180, h = 100, drop="earth globe",
+    vassoura = Elemento(estojo, tit = "estojo", drag=True,
+        x = 260, y = 410, w = 180, h = 100, drop="vassoura",
         cena=_sala.leste, texto="please, help me, fix my name")
-    '''
-    volc = Elemento(volcano, tit = "glow ball", drop="volcano",
-        x = 30, y = 500, w = 100, h = 120,
-        cena=_sala.leste, texto="please, help me, fix my name")
-        '''
+    borrifador = Elemento(vassoura, tit = "envelope", drag=True,
+        x =4, y = 240, w = 280, h = 390, drop="borrifador",
+        cena=_sala.oeste, texto="please, help me, fix my name")
+    envelope = Elemento(vassoura, tit = "vassoura", drag=True,
+        x =4, y = 240, w = 280, h = 390, drop="envelope",
+        cena=_sala.oeste, texto="please, help me, fix my name")
+    estojo = Elemento(vassoura, tit = "ampulheta", drag=True,
+        x =4, y = 240, w = 280, h = 390, drop="estojo",
+        cena=_sala.oeste, texto="please, help me, fix my name")
+        
     return _sala
 
 
