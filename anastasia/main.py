@@ -67,8 +67,8 @@ def gimnasium():
         x = 50, y = 40, w = 100, h = 100, drop="light_post",
         cena=_sala.sul, texto="please, help me, fix my name")
     ball_ = Elemento(ball, tit = "ligthpost",
-        x = 30, y = 500000, w = 100, h = 120,drop="ball",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        x = 400, y = 300, w = 100, h = 120,drop="ball",
+        cena=_sala.norte, texto="please, help me, fix my name")
     return _sala
 
 
