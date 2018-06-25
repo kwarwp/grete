@@ -52,22 +52,22 @@ def gimnasium():
     from naomi.main import Elemento
     _sala.sul.meio.vai = go_gimnasiun
     children_ = Elemento(children, tit = "reflector", drag=True,
-        x = 200, y = 170, w = 325, h = 200, drop="children",
+        x = 210, y = 160, w = 334, h = 213, drop="children",
         cena=_sala.sul, texto="please, help me, fix my name")
     bars_ = Elemento(bars, tit = "grandstand", drag=True,
-        x = 160, y = 210, w = 80, h = 100, drop="bars",
+        x = 375, y = 3, w = 130, h = 70, drop="bars",
         cena=_sala.norte, texto="please, help me, fix my name")
     grandstand_ = Elemento(grandstand, tit = "bars",
-        x = 360, y = 70, w = 80, h = 70, drop="grandstand",
+        x = 330, y = 188, w = 187, h = 180, drop="grandstand",
         cena=_sala.oeste, texto="please, help me, fix my name")
     reflector_ = Elemento(reflector, tit = "ball", drag=True,
-        x = 300, y = 275, w = 100, h = 140, drop="reflector",
-        cena=_sala.norte, texto="please, help me, fix my name")
+        x = 700, y = 13, w = 100, h = 140, drop="reflector",
+        cena=_sala.oeste, texto="please, help me, fix my name")
     light_post_ = Elemento(light_post, tit = "children", drag=True,
-        x = 50, y = 40, w = 100, h = 100, drop="light_post",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        x = 300, y = 2, w = 400, h = 380, drop="light_post",
+        cena=_sala.leste, texto="please, help me, fix my name")
     ball_ = Elemento(ball, tit = "ligthpost",
-        x = 400, y = 300, w = 100, h = 120,drop="ball",
+        x = 358, y = 210, w = 40, h = 40,drop="ball",
         cena=_sala.norte, texto="please, help me, fix my name")
     return _sala
 
