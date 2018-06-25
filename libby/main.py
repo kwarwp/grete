@@ -46,13 +46,13 @@ def secretary():
         
     def _gone_secretary():
         try:
-            geografia().sul.vai()
+            gimnasiun().sul.vai()
         except:
-            from stacy.main import trigonometria as tg
-            tg().sul.vai()
+            from amanda.main import gimnasiun
+            gimnasiun().sul.vai()
         
     def _go_secretary():
-        SECRETARY.sul.meio.vai = _gone_secretary
+        SECRETARY.oeste.meio.vai = _gone_secretary
         _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
         def redir():
             _vai.vai = _gone_secretary
@@ -69,9 +69,9 @@ def secretary():
         
     def go_secretary():
         _go_secretary()
-    TRIG = _sala = Sala(sn,sl,ss,so, "trig")
+    SECRETARY = _sala = Sala(sn,sl,ss,so, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = go_secretary)
+    _sala.oeste.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = go_secretary)
     bebedouro_ = Elemento(bebedouro, tit = "microscope", drag=True,
         x = 610, y = 192, w = 80, h = 90, drop="power outlet",
         cena=_sala.sul, texto="please, help me, fix my name")
