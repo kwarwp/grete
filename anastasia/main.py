@@ -2,6 +2,7 @@
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
 children = "https://i.imgur.com/SAjYpW5.jpg"
 bars = "https://i.imgur.com/4g9dJdv.jpg"
 grandstand = "https://i.imgur.com/6PYwS0s.jpg"
@@ -18,12 +19,38 @@ def gimnasium():
     if gimnasium_:
         return gimnasium_
         
-    def vai_geo():
+    def _gone_gimnasiun():
+        try:
+            secretary().sul.vai()
+        except:
+            from libby.main import secretary
+            secretary().sul.vai()
+        
+    def _go_gimnasiun():
+        gimnasium_.sul.meio.vai = _gone_gimnasiun
+        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        def redir():
+            _vai.vai = _gone_gimnasiun
+        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
+  - Manifestation on the street Dr. poop my pants.
+ The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
+   - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
+  He tired of all Claudemilson's and decide go sleep.
+  Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
+  - has a manifestation here the peoples are screaming: BECAME CLAUDEMILSON!!!!!!!!!!!!!!"""
+        _vai.vai = Texto(historia, '', texto, foi=redir).vai
+        historia.vai()
+        
+    def go_gimnasiun():
+        _go_gimnasiun()
+        
+    def __go_gimnasiun():
         from naomi.main import geografia
         geografia().sul.vai()
-    gimnasium_ = _sala = Sala(gimnasium_n,gimnasium_l,gimnasium_s,gimnasium_o, "trig")
+    gimnasium_ = _sala = Sala(gimnasium_n,gimnasium_l,gimnasium_s,gimnasium_o, "gimnasium")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_geo
+    _sala.sul.meio.vai = go_gimnasiun
     children_ = Elemento(children, tit = "reflector", drag=True,
         x = 310, y = 450, w = 70, h = 60, drop="children",
         cena=_sala.norte, texto="please, help me, fix my name")
