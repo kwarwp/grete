@@ -143,7 +143,7 @@ class Elemento(Element):
         # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
         _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
         self.vai = Texto(self.cena, _texto).vai
-        self._do_foi = lambda *_: None
+        #self._do_foi = lambda *_: None
 
 GEO = None
 def geografia(oeste=False):
