@@ -72,13 +72,13 @@ def secretary():
     SECRETARY = _sala = Sala(sn,sl,ss,so, "trig")
     from naomi.main import Elemento
     _sala.oeste.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = go_secretary)
-    bebedouro_ = Elemento(bebedouro, tit = "microscope", drag=True,
-        x = 610, y = 192, w = 80, h = 90, drop="power outlet",
+    bebedouro_ = Elemento(bebedouro, tit = "switch", drag=True,
+        x = 610, y = 192, w = 80, h = 90, drop="outlet",
         cena=_sala.sul, texto="please, help me, fix my name")
-    tomada_ = Elemento(tomada, tit = "volcano", drag=True,
-        x = 185, y = 30, w = 80, h = 100, drop="drink fountain",
+    tomada_ = Elemento(tomada, tit = "thermal bottle", drag=True,
+        x = 185, y = 30, w = 80, h = 100, drop="drinking fountain",
         cena=_sala.leste, texto="please, help me, fix my name")
-    extintor_ = Elemento(extintor, tit = "glow ball", drop="fire extinguisher",
+    extintor_ = Elemento(extintor, tit = "outlet", drop="fire extinguisher",
         x = 30, y = 500, w = 100, h = 120,
         cena=_sala.leste, texto="please, help me, fix my name")
     garrafa_termica_ = Elemento(garrafa_termica, tit = "fire_extinguisher", drag=True,
