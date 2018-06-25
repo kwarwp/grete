@@ -48,7 +48,7 @@ def secretary():
         try:
             gimnasium().sul.vai()
         except:
-            from amanda.main import gimnasium
+            from anastasia.main import gimnasium
             gimnasium().sul.vai()
         
     def _go_secretary():
