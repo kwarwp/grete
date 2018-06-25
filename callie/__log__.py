@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jun 25 2018 15:27:29.394 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 51
+  cena=_sala.norte, texto="please, help me, fix my name
+                                                       ^
+SyntaxError: EOL while scanning string literal
+'''},
