@@ -52,7 +52,7 @@ def gimnasium():
     from naomi.main import Elemento
     _sala.sul.meio.vai = go_gimnasiun
     children_ = Elemento(children, tit = "reflector", drag=True,
-        x = 310, y = 450, w = 70, h = 60, drop="children",
+        x = 200, y = 188, w = 150, h = 200, drop="children",
         cena=_sala.norte, texto="please, help me, fix my name")
     bars_ = Elemento(bars, tit = "grandstand", drag=True,
         x = 160, y = 210, w = 80, h = 100, drop="bars",
