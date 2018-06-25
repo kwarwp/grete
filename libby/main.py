@@ -46,14 +46,14 @@ def secretary():
         
     def _gone_secretary():
         try:
-            gimnasiun().sul.vai()
+            gimnasium().sul.vai()
         except:
-            from amanda.main import gimnasiun
-            gimnasiun().sul.vai()
+            from amanda.main import gimnasium
+            gimnasium().sul.vai()
         
     def _go_secretary():
         SECRETARY.oeste.meio.vai = _gone_secretary
-        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        _vai = Cena()
         def redir():
             _vai.vai = _gone_secretary
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
