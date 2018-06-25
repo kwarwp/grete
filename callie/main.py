@@ -16,7 +16,7 @@ from _spy.vitollino.main import STYLE, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 PRR = None
-def trigonometria():
+def kitchen():
     global PRR
     if PRR:
         return PRR
@@ -48,7 +48,10 @@ def trigonometria():
         cena=_sala.leste, texto="please, help me, fix my name")
     cokie = Elemento(fogao, tit = "sweetner", drop="cano",
         x = 500, y = 5, w = 100, h = 120,
-        cena=_sala.norte, texto="please, help me, fix my name
+        cena=_sala.norte, texto="please, help me, fix my name")
 
     return _sala
 
+if __name__ == "__main__": 
+    INVENTARIO.inicia()
+    kitchen().norte.vai()
