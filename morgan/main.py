@@ -32,10 +32,10 @@ def trigonometria():
         x = 260, y = 410, w = 80, h = 100, drop="clips",
         cena=_sala.leste, texto="please, help me, fix my name")
 
-    pipes = Elemento(pipe, tit = "motherboard", drop="cano",
+    pipes = Elemento(pipe, tit = "router rack", drop="cano",
         x = 500, y = 5, w = 100, h = 120,
         cena=_sala.norte, texto="please, help me, fix my name")
-    power = Elemento(power_plug, tit = "pipe", drag=True,
+    power = Elemento(power_plug, tit = "locker", drag=True,
         x = 510, y = 360, w = 100, h = 90, drop="glow ball",
        cena=_sala.leste, texto="please, help me, fix my name")
     doorl = Elemento(door_lock, tit = "keyboard", drag=True,
