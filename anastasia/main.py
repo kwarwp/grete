@@ -9,8 +9,8 @@ grandstand = "https://i.imgur.com/6PYwS0s.jpg"
 reflector = "https://i.imgur.com/U41sbtV.jpg"
 light_post = "https://i.imgur.com/Jk68bvK.jpg"
 ball = "https://i.imgur.com/bMUHNdH.jpg"
-gimnasium_o = "https://i.imgur.com/RVIqCjp.jpg"
-gimnasium_l = "https://i.imgur.com/kdnYpkh.jpg"
+gimnasium_l = "https://i.imgur.com/RVIqCjp.jpg"
+gimnasium_o = "https://i.imgur.com/kdnYpkh.jpg"
 gimnasium_n = "https://i.imgur.com/befIyyM.jpg"
 gimnasium_s = "https://i.imgur.com/5SnGZmp.jpg"
 gimnasium_ = None
@@ -53,13 +53,13 @@ def gimnasium():
     _sala.sul.meio.vai = go_gimnasiun
     children_ = Elemento(children, tit = "reflector", drag=True,
         x = 200, y = 188, w = 150, h = 200, drop="children",
-        cena=_sala.norte, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="please, help me, fix my name")
     bars_ = Elemento(bars, tit = "grandstand", drag=True,
         x = 160, y = 210, w = 80, h = 100, drop="bars",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        cena=_sala.norte, texto="please, help me, fix my name")
     grandstand_ = Elemento(grandstand, tit = "bars",
         x = 360, y = 70, w = 80, h = 70, drop="grandstand",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="please, help me, fix my name")
     reflector_ = Elemento(reflector, tit = "ball", drag=True,
         x = 300, y = 275, w = 100, h = 140, drop="reflector",
         cena=_sala.norte, texto="please, help me, fix my name")
@@ -67,7 +67,7 @@ def gimnasium():
         x = 50, y = 40, w = 100, h = 100, drop="light_post",
         cena=_sala.sul, texto="please, help me, fix my name")
     ball_ = Elemento(ball, tit = "ligthpost",
-        x = 30, y = 500, w = 100, h = 120,drop="ball",
+        x = 30, y = 500000, w = 100, h = 120,drop="ball",
         cena=_sala.leste, texto="please, help me, fix my name")
     return _sala
 
