@@ -3,7 +3,7 @@ from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, IN
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/vIYgSQV.jpg"
-children = "https://i.imgur.com/SAjYpW5.jpg"
+child = "https://i.imgur.com/SAjYpW5.jpg"
 bars = "https://i.imgur.com/4g9dJdv.jpg"
 grandstand = "https://i.imgur.com/6PYwS0s.jpg"
 reflector = "https://i.imgur.com/U41sbtV.jpg"
@@ -45,8 +45,8 @@ def gimnasium():
     gimnasium_ = _sala = Sala(gimnasium_n,gimnasium_l,gimnasium_s,gimnasium_o, "gimnasium")
     from naomi.main import Elemento
     _sala.sul.meio.vai = go_gimnasiun
-    children_ = Elemento(children, tit = "reflector", drag=True,
-        x = 210, y = 160, w = 334, h = 213, drop="children",
+    child_ = Elemento(child, tit = "reflector", drag=True,
+        x = 210, y = 160, w = 334, h = 213, drop="child",
         cena=_sala.sul, texto="please, help me, fix my name")
     bars_ = Elemento(bars, tit = "grandstand", drag=True,
         x = 375, y = 3, w = 130, h = 70, drop="bars",
@@ -57,7 +57,7 @@ def gimnasium():
     reflector_ = Elemento(reflector, tit = "ball", drag=True,
         x = 700, y = 13, w = 100, h = 140, drop="reflector",
         cena=_sala.oeste, texto="please, help me, fix my name")
-    light_post_ = Elemento(light_post, tit = "children", drag=True,
+    light_post_ = Elemento(light_post, tit = "child", drag=True,
         x = 300, y = 2, w = 400, h = 380, drop="light_post",
         cena=_sala.leste, texto="please, help me, fix my name")
     ball_ = Elemento(ball, tit = "ligthpost",
