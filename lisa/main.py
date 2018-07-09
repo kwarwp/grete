@@ -81,7 +81,7 @@ floor. Sadboy ran away and Cleison was alone and without choice, when...
     estojo = Elemento(estojo_, tit = "broom", drag=True,
         x = 260, y = 410, w = 180, h = 100, drop="estojo",
         cena=_sala.leste, texto="please, help me, fix my name")
-    borrifador = Elemento(borrifador_, tit = "pencilcase", drag=True,
+    borrifador = Elemento(borrifador_, tit = "envelope", drag=True,
         x =490, y = 390, w = 120, h = 130, drop="sprinkler",
         cena=_sala.sul, texto="please, help me, fix my name")
     envelope = Elemento(envelope_, tit = "pencilcase", drag=True,
