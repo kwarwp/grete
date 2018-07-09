@@ -82,9 +82,15 @@ def secretary():
         x = 30, y = 500, w = 100, h = 120,
         cena=_sala.leste, texto="please, help me, fix my name")
     garrafa_termica_ = Elemento(garrafa_termica, tit = "fire_extinguisher", drag=True,
-        x = 520, y = 220, w = 90, h = 60,
+        x = 520, y = 220, w = 90, h = 60, drop="termic  bottle",
         cena=_sala.sul, texto="please, help me, fix my name")
-    return _sala
+    interfone_ = Elemento(interfone, tit = "switch", drag=True,
+        x = 700, y = 220, w = 90, h = 60, drop="communicator",
+        cena=_sala.sul, texto="please, help me, fix my name")
+    interruptor_ = Elemento(interruptor, tit = "communicator", drag=True,
+        x = 900, y = 220, w = 90, h = 60, drop="switch",
+        cena=_sala.sul, texto="please, help me, fix my name")
+       return _sala
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
