@@ -88,8 +88,8 @@ def secretary():
         x = 700, y = 220, w = 90, h = 60, drop="communicator",
         cena=_sala.sul, texto="please, help me, fix my name")
     interruptor_ = Elemento(interruptor, tit = "communicator", drag=True,
-        x = 900, y = 220, w = 90, h = 60, drop="switch",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        x = 100, y = 220, w = 90, h = 60, drop="switch",
+        cena=_sala.oeste, texto="please, help me, fix my name")
     return _sala
 
 if __name__ == "__main__": 
