@@ -20,7 +20,19 @@ def school_houser():
         
     def vai_geo():
         from naomi.main import geografia
-        geografia().sul.vai()
+        geografia().sul.vai()except:
+            from libby.main import secretary
+            secretary().sul.vai()
+        
+    def _go_school_house():
+        school_house_.sul.meio.vai = _gone_school_house
+        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        def redir():
+            _vai.vai = _gone_gimnasiun
+        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        _vai.vai = Texto(historia, '', texto, foi=redir).vai
+        historia.vai()
     school_house = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
