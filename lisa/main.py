@@ -86,7 +86,7 @@ floor. Sadboy ran away and Cleison was alone and without choice, when...
         cena=_sala.sul, texto="please, help me, fix my name")
     envelope = Elemento(envelope_, tit = "vassoura", drag=True,
         x =200, y = 240, w = 280, h = 390, drop="envelope",
-        cena=_sala., texto="please, help me, fix my name")
+        cena=_sala.norte, texto="please, help me, fix my name")
     estojo = Elemento(vassoura_, tit = "ampulheta", drag=True,
         x =4, y = 240, w = 280, h = 390, drop="estojo",
         cena=_sala.oeste, texto="please, help me, fix my name")
