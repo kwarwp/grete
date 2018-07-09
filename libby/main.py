@@ -90,7 +90,7 @@ def secretary():
     interruptor_ = Elemento(interruptor, tit = "communicator", drag=True,
         x = 900, y = 220, w = 90, h = 60, drop="switch",
         cena=_sala.sul, texto="please, help me, fix my name")
-       return _sala
+    return _sala
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
