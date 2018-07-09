@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
-TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/vIYgSQV.jpg"
 children = "https://i.imgur.com/SAjYpW5.jpg"
 bars = "https://i.imgur.com/4g9dJdv.jpg"
 grandstand = "https://i.imgur.com/6PYwS0s.jpg"
@@ -32,13 +32,7 @@ def gimnasium():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
-  - Manifestation on the street Dr. poop my pants.
- The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
-   - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
-  He tired of all Claudemilson's and decide go sleep.
-  Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
-  - has a manifestation here the peoples are screaming: BECAME CLAUDEMILSON!!!!!!!!!!!!!!"""
+        texto = """ One day, there was a manifestation against Claudemilson, and she didn´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
