@@ -30,11 +30,11 @@ def dogatthebeach():
     
 dogatthebeach()
 '''
-borrifador = "https://i.imgur.com/PVBd6Zb.jpg"
-vassoura = "https://i.imgur.com/mvUeaEl.jpg"
-ampulheta = "https://i.imgur.com/cJA5pJD.jpg"
-envelope = "https://i.imgur.com/GmMIxkq.jpg"
-estojo = "https://i.imgur.com/Xz0C6PL.jpg"
+borrifador_ = "https://i.imgur.com/PVBd6Zb.jpg"
+vassoura_ = "https://i.imgur.com/mvUeaEl.jpg"
+ampulheta_ = "https://i.imgur.com/cJA5pJD.jpg"
+envelope_ = "https://i.imgur.com/GmMIxkq.jpg"
+estojo_ = "https://i.imgur.com/Xz0C6PL.jpg"
 TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
 TRIG = None
 def trigonometria():
@@ -55,13 +55,18 @@ def trigonometria():
         def redir():
             _vai.vai = _foi_geo
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
-  - Manifestation on the street Dr. poop my pants.
- The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
-   - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
-  He tired of all Claudemilson's and decide go sleep.
-  Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
-  - has a manifestation here the people are screaming: BECOME CLAUDEMILSON!!!!!!!!!!!!!!"""
+        texto = """The Lunch Kiddo!
+Cleison pass throw the corridor but then he sees the 23 classroom lost dreams song.
+the boy enters there and sees a different room: there’s a missing space! Then, Cleison
+looks at the little door beside the board written “Become Robervald. Become Claudemilson.”,
+He walks to the little door and he opens it: It’s the janitor’s room, weird… Cleison starts sneezing
+all over the place, because it was too dirty , and at the same time, he was blowing the dust away, 
+so he could see his locker, it was written “Lunch Kiddo”. A tear fell from his eye. He remembered 
+Elianildes, an old canteen employee, and his friend too. After so much sentimentality, he heard a
+noise inside the neighbour locker; he opened it and seen an afraid puppy, that Cleison called “Sadboy”,
+but the dog was so excited! They were playing,when they heared a deafening sound of feet stepping on the 
+floor. Sadboy ran away and Cleison was alone and without choice, when...
+"""
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
@@ -70,19 +75,19 @@ def trigonometria():
     TRIG = _sala = Sala(CLASS23A,CLASS23B,CLASS23C,CLASS23D, "trig")
     from naomi.main import Elemento
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
-    ampulheta = Elemento(vassoura, tit = "borrifador", drag=True,
+    ampulheta = Elemento(vassoura_, tit = "borrifador", drag=True,
         x =4, y = 240, w = 280, h = 390, drop="ampulheta",
         cena=_sala.oeste, texto="please, help me, fix my name")
-    vassoura = Elemento(estojo, tit = "estojo", drag=True,
+    vassoura = Elemento(estojo_, tit = "estojo", drag=True,
         x = 260, y = 410, w = 180, h = 100, drop="vassoura",
         cena=_sala.leste, texto="please, help me, fix my name")
-    borrifador = Elemento(vassoura, tit = "envelope", drag=True,
-        x =4, y = 240, w = 280, h = 390, drop="borrifador",
-        cena=_sala.oeste, texto="please, help me, fix my name")
-    envelope = Elemento(vassoura, tit = "vassoura", drag=True,
-        x =4, y = 240, w = 280, h = 390, drop="envelope",
-        cena=_sala.oeste, texto="please, help me, fix my name")
-    estojo = Elemento(vassoura, tit = "ampulheta", drag=True,
+    borrifador = Elemento(borrifador_, tit = "envelope", drag=True,
+        x =490, y = 390, w = 120, h = 130, drop="borrifador",
+        cena=_sala.sul, texto="please, help me, fix my name")
+    envelope = Elemento(envelope_, tit = "vassoura", drag=True,
+        x =200, y = 240, w = 280, h = 390, drop="envelope",
+        cena=_sala., texto="please, help me, fix my name")
+    estojo = Elemento(vassoura_, tit = "ampulheta", drag=True,
         x =4, y = 240, w = 280, h = 390, drop="estojo",
         cena=_sala.oeste, texto="please, help me, fix my name")
         
