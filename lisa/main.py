@@ -35,7 +35,7 @@ vassoura_ = "https://i.imgur.com/mvUeaEl.jpg"
 ampulheta_ = "https://i.imgur.com/cJA5pJD.jpg"
 envelope_ = "https://i.imgur.com/GmMIxkq.jpg"
 estojo_ = "https://i.imgur.com/Xz0C6PL.jpg"
-TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/IddJCQk.png"
 TRIG = None
 def trigonometria():
     global TRIG
@@ -55,8 +55,7 @@ def trigonometria():
         def redir():
             _vai.vai = _foi_geo
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """The Lunch Kiddo!
-Cleison pass throw the corridor but then he sees the 23 classroom lost dreams song.
+        texto = """The Lunch Kiddo!---Cleison pass throw the corridor but then he sees the 23 classroom lost dreams song.
 the boy enters there and sees a different room: there’s a missing space! Then, Cleison
 looks at the little door beside the board written “Become Robervald. Become Claudemilson.”,
 He walks to the little door and he opens it: It’s the janitor’s room, weird… Cleison starts sneezing
