@@ -47,4 +47,4 @@ def school_houser():
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
-    schoolhouser().norte.vai()
+    trigonometria().norte.vai()
