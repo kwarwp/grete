@@ -165,3 +165,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Thu Jul 12 2018 15:27:13.721 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  def _go_principasroom():
+  ^
+IndentationError: unexpected indent
+'''},
