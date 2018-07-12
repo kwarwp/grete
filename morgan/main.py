@@ -24,7 +24,7 @@ def trigonometria():
         from naomi.main import geografia
         geografia().sul.vai()
         def _go_principalsroom():
-        principasroom_.sul.meio.vai = _gone_principalsroom
+        principalsroom_.sul.meio.vai = _gone_principalsroom
         _vai = Cena(PRINCIPALS_ROOM)
         def redir():
             _vai.vai = _gone_gimnasiun
