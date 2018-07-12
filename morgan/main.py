@@ -3,6 +3,7 @@ Principals_room_n = "https://i.imgur.com/U9ixbT0.jpg"
 Principals_room_o = "https://i.imgur.com/gxOcDsS.jpg"
 Principals_room_l = "https://i.imgur.com/SV1Ko1N.jpg"
 Principals_room_s = "https://i.imgur.com/V85pfUS.jpg"
+PRINCIPALS_ROOM = "https://i.imgur.com/UsGRBIp.jpg"
 # objects
 clips = "https://i.imgur.com/Z25C40V.jpg"
 door_lock = "https://i.imgur.com/q1tJiqJ.jpg"
@@ -24,10 +25,10 @@ def trigonometria():
         geografia().sul.vai()
          def _go_principasroom():
         principasroom_.sul.meio.vai = _gone_principasroom
-        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        _vai = Cena(PRINCIPALS_ROOM)
         def redir():
             _vai.vai = _gone_gimnasiun
-        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        historia = Cena(PRINCIPALS_ROOM, _vai, _vai, _vai)
         texto = """                        Cleison goes to the principalÂ´s room
 Cleison hears someone calling him. He did not know who it was. He looked and saw a woman wearing a t-shirt with the words : Become Claudemilson. 
 She said:
