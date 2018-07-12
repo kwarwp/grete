@@ -179,3 +179,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Thu Jul 12 2018 15:29:48.85 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 27
+  principasroom_.sul.meio.vai = _gone_principasroom
+  ^
+IndentationError: expected an indented block
+'''},
