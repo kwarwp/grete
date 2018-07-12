@@ -22,6 +22,26 @@ def trigonometria():
     def vai_geo():
         from naomi.main import geografia
         geografia().sul.vai()
+         def _go_principasroom():
+        principasroom_.sul.meio.vai = _gone_principasroom
+        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        def redir():
+            _vai.vai = _gone_gimnasiun
+        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        texto = """                        Cleison goes to the principal´s room
+Cleison hears someone calling him. He did not know who it was. He looked and saw a woman wearing a t-shirt with the words : Become Claudemilson. 
+She said:
+-Go to the Principal´s room!!!!
+He remembered that  in his time he had a principal named George that was cool.
+He did not understand anything, only followed the woman. In the principal´s room, she said
+-	You will have to listen to a rap and a funk of the dictatorship of Claudemilson and eat raw noodles!!!
+Out of nowhere started a beat: Become Claudemilson♫ ♪
+Wile Claudemilson was not seeing, Claison escaped.
+When he ran away, he got into his car and went around desperately, but a traffic policeman stopped him . In this meanwhile, Claudemilson had time to reach him.Claudemilson began to shout with Cleison and in the meantime a fiscal that passed near there decided to enter the school .He saw that Claudemilson tortured the children, and she was arrested.
+""" 
+        _vai.vai = Texto(historia, '', texto, foi=redir).vai
+        historia.vai()
+        
     PRR = _sala = Sala(Principals_room_n,Principals_room_o,Principals_room_l,Principals_room_s, "principal")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
