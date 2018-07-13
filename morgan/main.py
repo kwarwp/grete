@@ -3,7 +3,7 @@ Principals_room_n = "https://i.imgur.com/U9ixbT0.jpg"
 Principals_room_o = "https://i.imgur.com/gxOcDsS.jpg"
 Principals_room_l = "https://i.imgur.com/SV1Ko1N.jpg"
 Principals_room_s = "https://i.imgur.com/V85pfUS.jpg"
-PRINCIPALS_ROOM = "https://i.imgur.com/UsGRBIp.jpg"
+principalsroom = "https://i.imgur.com/UsGRBIp.jpg"
 # objects
 clips = "https://i.imgur.com/Z25C40V.jpg"
 door_lock = "https://i.imgur.com/q1tJiqJ.jpg"
