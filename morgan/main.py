@@ -11,9 +11,10 @@ keyboard = "https://i.imgur.com/EM4mZq2.jpg"
 power_plug ="https://i.imgur.com/4eX2x0y.jpg"
 pipe = "https://i.imgur.com/IWX6ah1.jpg"
 caixa_mae = "https://i.imgur.com/THLu9uv.jpg"
-from _spy.vitollino.main import STYLE, INVENTARIO, Sala
+from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/vIYgSQV.jpg"
 PRR = None
 def principalsroom():
     global principalsroom_
