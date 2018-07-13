@@ -27,8 +27,8 @@ def principalsroom():
             from libby.main import gymansium
             gymnasium().sul.vai()
         def _go_principalsroom():
-        principalsroom_.sul.meio.vai = _gone_principalsroom
-        _vai = Cena(PRINCIPALS_ROOM)
+            principalsroom_.sul.meio.vai = _gone_principalsroom
+            _vai = Cena(PRINCIPALS_ROOM)
         def redir():
             _vai.vai = _principalsroom
         historia = Cena(PRINCIPALS_ROOM, _vai, _vai, _vai)
