@@ -15,19 +15,22 @@ from _spy.vitollino.main import STYLE, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 PRR = None
-def trigonometria():
-    global PRR
-    if PRR:
-        return PRR
+def principalsroom():
+    global principalsroom_
+    if principalsroom_:
+        return principalsroom_
         
-    def vai_geo():
-        from naomi.main import geografia
-        geografia().sul.vai()
+    def _gone_principalsroom():
+        try:
+            gymnasium().sul.vai()
+        except:
+            from libby.main import gymansium
+            gymnasium().sul.vai()
         def _go_principalsroom():
         principalsroom_.sul.meio.vai = _gone_principalsroom
         _vai = Cena(PRINCIPALS_ROOM)
         def redir():
-            _vai.vai = _gone_gimnasiun
+            _vai.vai = _principalsroom
         historia = Cena(PRINCIPALS_ROOM, _vai, _vai, _vai)
         texto = """                        Cleison goes to the principalÃÂ´s room
 Cleison hears someone calling him. He did not know who it was. He looked and saw a woman wearing a t-shirt with the words : Become Claudemilson. 
