@@ -49,7 +49,7 @@ When he ran away, he got into his car and went around desperately, but a traffic
         
     PRR = _sala = Sala(Principals_room_n,Principals_room_o,Principals_room_l,Principals_room_s, "principal")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_principalsroom
+    _Sala.sul.meio.vai = vai_principalsroom
     caixa = Elemento(caixa_mae, tit = "pipe", drag=True,
         x = 480, y = 140, w = 180, h = 290, drop="glow ball",
        cena=_sala.norte, texto="please, help me, fix my name")
