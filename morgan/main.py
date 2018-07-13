@@ -29,14 +29,14 @@ def trigonometria():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(PRINCIPALS_ROOM, _vai, _vai, _vai)
-        texto = """                        Cleison goes to the principalÂ´s room
+        texto = """                        Cleison goes to the principalÃÂ´s room
 Cleison hears someone calling him. He did not know who it was. He looked and saw a woman wearing a t-shirt with the words : Become Claudemilson. 
 She said:
--Go to the PrincipalÂ´s room!!!!
+-Go to the PrincipalÃÂ´s room!!!!
 He remembered that  in his time he had a principal named George that was cool.
-He did not understand anything, only followed the woman. In the principalÂ´s room, she said
+He did not understand anything, only followed the woman. In the principalÃÂ´s room, she said
 -You will have to listen to a rap and a funk of the dictatorship of Claudemilson and eat raw noodles!!!
-Out of nowhere started a beat: Become Claudemilsonâ« âª
+Out of nowhere started a beat: Become ClaudemilsonÃ¢ÂÂ« Ã¢ÂÂª
 Wile Claudemilson was not seeing, Claison escaped.
 When he ran away, he got into his car and went around desperately, but a traffic policeman stopped him . In this meanwhile, Claudemilson had time to reach him.Claudemilson began to shout with Cleison and in the meantime a fiscal that passed near there decided to enter the school .He saw that Claudemilson tortured the children, and she was arrested.
 """ 
