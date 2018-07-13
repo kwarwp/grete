@@ -74,4 +74,4 @@ When he ran away, he got into his car and went around desperately, but a traffic
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
-    trigonometria().norte.vai()
+    principalsroom().norte.vai()
