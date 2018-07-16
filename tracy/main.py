@@ -6,9 +6,9 @@ CASAL="https://1.bp.blogspot.com/-Kpu0Abwjqe0/TyS1cAygHGI/AAAAAAAADhk/eWsZn-I6vX
 UNDER_THE_SEA=""
 def historia_com_castelo():
     cena_com_castelo = Cena(img=CASTELO)
-    princesa = Elemento(img=PRINCESA, tit="bom dia a todos meu nome é Ariel ", style=dict(width=100, height=150))
+    princesa = Elemento(img=PRINCESA, tit="bom dia a todos meu nome Ã© Ariel ", style=dict(width=100, height=150))
     princesa.entra(cena_com_castelo)
-    fala_ariel = Texto(cena_com_castelo,"pode não parecer mas eu guardo vários segredos como que eu sou uma sereia!")
+    fala_ariel = Texto(cena_com_castelo,"pode nÃ£o parecer mas eu guardo vÃ¡rios segredos como que eu sou uma sereia!")
     princesa.vai = fala_ariel.vai
     cena_com_castelo.vai()
     
