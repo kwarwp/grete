@@ -32,12 +32,20 @@ def gimnasium():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        texto = """ One day, there was a manifestation against Claudemilson, and she didn´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
     def go_gimnasiun():
         _go_gimnasiun()
+        
+    def go_school_house():
+        try:
+            school_house_().norte.vai()
+        except:
+            from courtney.main import school_house_
+            school_house_().norte.vai()
+
         
     def __go_gimnasiun():
         from naomi.main import geografia
@@ -45,6 +53,7 @@ def gimnasium():
     gimnasium_ = _sala = Sala(gimnasium_n,gimnasium_l,gimnasium_s,gimnasium_o, "gimnasium")
     from naomi.main import Elemento
     _sala.sul.meio.vai = go_gimnasiun
+    _sala.oeste.meio.vai = go_school_house
     child_ = Elemento(child, tit = "reflector", drag=True,
         x = 210, y = 160, w = 334, h = 213, drop="child",
         cena=_sala.sul, texto="please, help me, fix my name")
