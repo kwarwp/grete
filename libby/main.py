@@ -37,7 +37,7 @@ leyden  = "https://i.imgur.com/abeXKwL.jpg"
 volcano  = "https://i.imgur.com/4Y5aie8.jpg"
 globe  = "https://i.imgur.com/EQtHzod.jpg"
 ball  = "https://i.imgur.com/rBbRsFU.jpg"
-TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
+TIRINHA_DA_SECRETARIA= "https://i.imgur.com/KeOGmaf.png"
 SECRETARY = None
 def secretary():
     global SECRETARY
@@ -56,7 +56,7 @@ def secretary():
         _vai = Cena()
         def redir():
             _vai.vai = _gone_secretary
-        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        historia = Cena(TIRINHA_DA_SECRETARIA, _vai, _vai, _vai)
         texto = """Cleison enteres the school excitedly and sees the three secretaries. Boring, 
 so boring that you would even want to die just to look at them. 
 He went to speak to them. Getting closer, he saw  on their  shirts the following sentence : 
@@ -73,7 +73,7 @@ He left and the three of them looked at him leaving, just turning their heads.
         _go_secretary()
     SECRETARY = _sala = Sala(sn,sl,ss,so, "trig")
     from naomi.main import Elemento
-    _sala.oeste.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = go_secretary)
+    _sala.oeste.meio = Cena(TIRINHA_DA_SECRETARIA, vai = go_secretary)
     bebedouro_ = Elemento(bebedouro, tit = "switch", drag=True,
         x = 460, y = 192, w = 80, h = 90, drop="drinking fountain",
         cena=_sala.sul, texto="Please help me, fix my name.")
