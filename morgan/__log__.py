@@ -200,3 +200,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Jul 17 2018 00:05:53.970 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 73
+  doorl = Elemento(door_lock, tit = "keyboard", drag=True,
+                                                                                                                             ^
+SyntaxError: invalid syntax
+'''},
