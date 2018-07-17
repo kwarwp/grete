@@ -134,10 +134,10 @@ class Elemento(Element):
         src_id = ev.data['text']
         tit = doc[src_id].title
         if tit != self.real:
-            Texto(self.cena, "Hey, this is not my name: {}".format(tit)).vai()
+            Texto(self.cena, "Hey, this is not my name: {}.".format(tit)).vai()
             return False
         self.tit = tit
-        Texto(self.cena, "Finally, my correct name: {}".format(self.tit)).vai()
+        Texto(self.cena, "Finally, my correct name: {}.".format(self.tit)).vai()
         doc[src_id].remove()
         self.do_drag(False)
         # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
@@ -157,11 +157,11 @@ def geografia(oeste=False):
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
     mic = Elemento(MIC, tit="volcano", drag=False, drop="microscope",
                    x=610, y=100, w=80, h=90,
-                   cena=_sala.sul, texto="please, help me, fix my name")
+                   cena=_sala.sul, texto="Please help me, fix my name.")
     # mic.do_drag(False)
     pan = Elemento(PAN, tit="earth globe", drag=False, drop="sweep pan",
                    x=750, y=110, w=50, h=230,
-                   style=panstyle, cena=_sala.leste, texto="please, help me, fix my name")
+                   style=panstyle, cena=_sala.leste, texto="Please help me, fix my name.")
     _ = mic, pan
     _sala.norte.meio = Cena(vai=vai_trigo)
     return _sala
