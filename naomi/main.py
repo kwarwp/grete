@@ -69,7 +69,7 @@ class Elemento(Element):
     @classmethod
     def _scorer_(cls):
         Elemento._scorer_ = lambda *_ : None
-        Elemento._score = scr = Elemento()
+        Elemento._score = scr = Elemento(SCORE)
         scr.score_ = html.H2("0")
         scr.elt <= scr.score_
         scr.entra(INVENTARIO)
@@ -155,6 +155,7 @@ class Elemento(Element):
         self.tit = tit
         Texto(self.cena, "Finally, my correct name: {}.".format(self.tit)).vai()
         doc[src_id].remove()
+        self.do_score(tit)
         self.do_drag(False)
         # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
         _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
