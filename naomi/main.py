@@ -181,8 +181,8 @@ def geografia(oeste=False):
                    style=panstyle, cena=_sala.leste, texto="Please help me, fix my name.")
     _ = mic, pan
     _sala.norte.meio = Cena(vai=vai_trigo)
-    _sala.sul.meio = _go_gymnasiun
-    _sala.leste.meio = _go_geometry
+    _sala.sul.meio.vai = _go_gymnasiun
+    _sala.leste.meio.vai = _go_geometry
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
 
