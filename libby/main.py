@@ -52,6 +52,12 @@ def secretary():
         except:
             from anastasia.main import gimnasium
             gimnasium().sul.vai()
+    def _go_kitchen():
+        try:
+            kitchen().oeste.vai()
+        except:
+            from callie.main import kitchen as kitchen
+            kitchen().oeste.vai()
         
     def _go_secretary():
         SECRETARY.oeste.meio.vai = _gone_secretary
