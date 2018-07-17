@@ -52,11 +52,11 @@ def trigonometria():
         try:
             geography().norte.vai()
         except:
-            from naomi.main import geography
+            from naomi.main import geografia as geography
             geography().oeste.vai()
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
-    _sala.leste.meio = Cena(vai=_go_geography)
+    _sala.leste.meio = Cena(vai=go_geography)
     #_sala.oeste.meio.vai = _go_geography
     parap = Elemento(parapeito, tit = "socket", drag=True,
         x = 610, y = 300, w = 80, h = 90, drop="sill",
