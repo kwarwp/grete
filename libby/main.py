@@ -81,8 +81,8 @@ def secretary():
     extintor_ = Elemento(extintor, tit = "socket", drag=True,
         x = 30, y = 500, w = 100, h = 120,drop="fire extinguisher",
         cena=_sala.leste, texto="please, help me, fix my name")
-    garrafa_termica_ = Elemento(garrafa_termica, tit = "fire_extinguisher", drag=True,
-        x = 520, y = 220, w = 90, h = 60, drop="termic  bottle",
+    garrafa_termica_ = Elemento(garrafa_termica, tit = "fire extinguisher", drag=True,
+        x = 520, y = 220, w = 90, h = 60, drop="thermal bottle",
         cena=_sala.sul, texto="please, help me, fix my name")
     interfone_ = Elemento(interfone, tit = "switch", drag=True,
         x = 700, y = 220, w = 90, h = 60, drop="communicator",
