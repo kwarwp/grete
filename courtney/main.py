@@ -13,6 +13,8 @@ vase = "https://i.imgur.com/yBMisN8.jpg"
 ligth_fixture = "https://i.imgur.com/1yslKV5.jpg"
 dispenser = "https://i.imgur.com/o9raZp8.jpg"
 napkin_holder = "https://i.imgur.com/czetnka.jpg"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
+
 school_house = None
 def school_house_():
     global school_house
@@ -21,16 +23,16 @@ def school_house_():
         
     def _gone_school_house():
         try:
-            school_house_().sul.vai()
+            gimnasium().leste.vai()
         except:
-            from libby.main import gymnasium
-            gymnasium().leste.vai()
+            from anastasia.main import gimnasium
+            gimnasium().leste.vai()
         
     def _go_school_house():
         school_house.sul.meio.vai = _gone_school_house
-        _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
+        _vai = Cena()
         def redir():
-            _vai.vai = _gone_gimnasiun
+            _vai.vai = _gone_school_house
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """ One day, there was a manifestation against Claudemilson,
         and she did not like it at all. So she made the demonstrators hear 'Funk Carioca' during 10 hours... """ 
