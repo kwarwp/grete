@@ -50,13 +50,13 @@ def trigonometria():
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
     vdgball = Elemento(ball, tit = "microscope", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="glow ball",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="Please help me, fix my name.")
     eglobe = Elemento(globe, tit = "sweep pan", drag=True,
         x = 160, y = 210, w = 80, h = 100, drop="earth globe",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please, help me, fix my name.")
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
         x = 30, y = 500, w = 100, h = 120,
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please help me, fix my name.")
     return _sala
 
 
