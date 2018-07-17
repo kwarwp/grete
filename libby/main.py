@@ -57,13 +57,13 @@ def secretary():
         def redir():
             _vai.vai = _gone_secretary
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """Then when he stay house, he sit on the sofa,and turn on the TV and saw the following head line:
-  - Manifestation on the street Dr. poop my pants.
- The manifestation is happening behind her house, and have peoples whif plates, turning down bus and screaming:
-   - Became Robervald, became Claudemilson, became Robervald Claudemilson!!!!!!!!!!!!!!!
-  He tired of all Claudemilson's and decide go sleep.
-  Then he wake up at morning, and cout to her daddy and his mother of the crazy nightmare he has, and sit to turn on the TV and saw:
-  - has a manifestation here the peoples are screaming: BECAME CLAUDEMILSON!!!!!!!!!!!!!!"""
+        texto = """Cleison enter the school excitedly and sees the three excited secretaries boring, totally boring, that you would even want to die of so boring that they were. 
+He went to talk  to them, and getting closer, he saw  on their  shirts ,the following phrase : 
+‘ Become Claudemilson”.He said”hello” and they just said : “ Become Claudemillson  where’s your shirt?”
+He said:
+-I’m a former student, I just come to visit the school, then excuse me .                            book                                           leaving.
+He got away, and the there of them looking at him leaving, just turning their heads, without booking away.
+"""
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
