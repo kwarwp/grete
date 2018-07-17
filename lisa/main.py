@@ -37,24 +37,24 @@ ampulheta_ = "https://i.imgur.com/cJA5pJD.jpg"
 envelope_ = "https://i.imgur.com/GmMIxkq.jpg"
 estojo_ = "https://i.imgur.com/Xz0C6PL.jpg"
 TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/beHffD5.png"
-TRIG = None
-def trigonometria():
-    global TRIG
-    if TRIG:
-        return TRIG
-        
-    def _foi_geo():
+ROOM= None
+def room23():
+    global ROOM
+    if ROOM:
+        return ROOM
+    def _gone_room23():
         try:
-            geografia().sul.vai()
+            school_house().sul.vai()
         except:
-            from naomi.main import geografia
-            geografia().sul.vai()
+            from courtney.main import school_house
+            school_house().sul.vai()    
         
-    def _vai_geo():
-        TRIG.sul.meio.vai = _foi_geo
+           
+    def _vai_room23():
+        ROOM.sul.meio= Cena(vai = _gone_room23)#vai = _foi_room23
         _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
         def redir():
-            _vai.vai = _foi_geo
+            _vai.vai = _gone_room23
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """The Lunch Kiddo!---Cleison passes through the corridor but then he sees the classroom 23.
 The boy enters it and sees a different room: there is something missing! Cleison
@@ -70,11 +70,11 @@ floor. Sadboy ran away and Cleison was alone and without any choice, when sudden
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
-    def vai_geo():
-        _vai_geo()
-    TRIG = _sala = Sala(CLASS23B,CLASS23A,CLASS23C,CLASS23D, "trig")
+    def vai_room23():
+        _vai_room23()
+    ROOM = _sala = Sala(CLASS23B,CLASS23A,CLASS23C,CLASS23D, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
+    _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_room23)
     ampulheta = Elemento(ampulheta_, tit = "sprayer", drag=True,
         x =500, y = 440, w = 60, h = 60, drop="hourglass",
         cena=_sala.norte, texto="Please help me, fix my name.")
@@ -96,4 +96,4 @@ floor. Sadboy ran away and Cleison was alone and without any choice, when sudden
 
 if __name__ == "__main__": 
     INVENTARIO.inicia()
-    trigonometria().norte.vai()
+    room23().norte.vai()
