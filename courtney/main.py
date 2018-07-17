@@ -1,4 +1,5 @@
 # grete.courtney.main.py
+#REVISADO
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
