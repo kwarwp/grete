@@ -161,6 +161,14 @@ def geografia(oeste=False):
         except:
             from libby.main import gimnasium
             gimnasium().sul.vai()
+        
+        
+    def _go_geometry():
+        try:
+            geometry().sul.vai()
+        except:
+            from kathryn.main import trigonometria as geometry
+            geometry().sul.vai()
 
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
@@ -174,6 +182,7 @@ def geografia(oeste=False):
     _ = mic, pan
     _sala.norte.meio = Cena(vai=vai_trigo)
     _sala.sul.meio = _go_gymnasiun
+    _sala.leste.meio = _go_geometry
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
 
