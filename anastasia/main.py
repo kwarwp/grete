@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
-TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/vIYgSQV.jpg"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/zP65MT5.jpg"
 child = "https://i.imgur.com/SAjYpW5.jpg"
 bars = "https://i.imgur.com/4g9dJdv.jpg"
 grandstand = "https://i.imgur.com/6PYwS0s.jpg"
