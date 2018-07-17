@@ -118,3 +118,7 @@ AttributeError: 'NoneType' object has no attribute '_scorer_'
 'error': '''
 Exception: <RangeError: Maximum call stack size exceeded>
 '''},
+{'date': 'Tue Jul 17 2018 13:16:13.480 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <RangeError: Maximum call stack size exceeded>
+'''},
