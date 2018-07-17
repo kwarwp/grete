@@ -28,21 +28,21 @@ def trigonometria():
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
-    parap = Elemento(parapeito, tit = "microscope", drag=True,
-        x = 610, y = 300, w = 80, h = 90, drop="glow ball",
-        cena=_sala.norte, texto="Ai")
+    parap = Elemento(parapeito, tit = "socket", drag=True,
+        x = 610, y = 300, w = 80, h = 90, drop="sill",
+        cena=_sala.norte, texto="Please help me, fix my name.")
    
-    interr = Elemento(interruptor, tit = "inter", drag=True,
-        x = 360, y = 160, w = 40, h = 70, drop="earth globe",
-        cena=_sala.leste, texto="please, help me, fix my name")
+    interr = Elemento(interruptor, tit = "sill", drag=True,
+        x = 360, y = 160, w = 40, h = 70, drop="light switch",
+        cena=_sala.leste, texto="Please help me, fix my name.")
     
-    toma = Elemento(tomada, tit = "tomada", drag=True,
-        x = 100, y = 300, w = 60, h = 70, drop="earth globe",
-        cena=_sala.sul, texto="please, help me, fix my name")
+    toma = Elemento(tomada, tit = "screen", drag=True,
+        x = 100, y = 300, w = 60, h = 70, drop="socket",
+        cena=_sala.sul, texto="Please help me, fix my name.")
         
-    mono = Elemento(monitor, tit = "monitor", drag=True,
-        x = 105, y = 335, w = 90, h = 80, drop="earth globe",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+    mono = Elemento(monitor, tit = "light switch", drag=True,
+        x = 105, y = 335, w = 90, h = 80, drop="screen",
+        cena=_sala.oeste, texto="Please help me, fix my name.")
     
     return _sala
 
@@ -73,7 +73,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÃÂÂÂÂÂÂÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÃÂÂÂÂÂÂÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
