@@ -66,7 +66,7 @@ class Elemento(Element):
     def _scorer_(cls):
         Elemento._scorer_ = lambda *_ : None
         Elemento._score = scr = Elemento()
-        scr.score_ = html.H1("0")
+        scr.score_ = html.H2("0")
         scr.elt <= scr.score_
         scr.entra(INVENTARIO)
         
