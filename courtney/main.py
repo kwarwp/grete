@@ -21,7 +21,7 @@ def school_house_():
     if School_House:
         return School_House
         
-    def _gone_school_house():
+    def _gone_school_house_():
         try:
             gimnasium().leste.vai()
         except:
