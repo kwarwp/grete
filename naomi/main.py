@@ -165,10 +165,10 @@ def geografia(oeste=False):
         
     def _go_geometry():
         try:
-            geometry().sul.vai()
+            geometry().leste.vai()
         except:
             from kathryn.main import trigonometria as geometry
-            geometry().sul.vai()
+            geometry().leste.vai()
 
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
