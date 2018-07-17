@@ -198,3 +198,10 @@ NameError: name 'vai_geo' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Jul 17 2018 01:49:11.517 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  def go_school_house():
+  ^
+IndentationError: unexpected indent
+'''},
