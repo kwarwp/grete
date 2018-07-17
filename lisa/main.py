@@ -36,7 +36,7 @@ vassoura_ = "https://i.imgur.com/mvUeaEl.jpg"
 ampulheta_ = "https://i.imgur.com/cJA5pJD.jpg"
 envelope_ = "https://i.imgur.com/GmMIxkq.jpg"
 estojo_ = "https://i.imgur.com/Xz0C6PL.jpg"
-TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/KeP2cUL.png"
+TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/beHffD5.png"
 TRIG = None
 def trigonometria():
     global TRIG
