@@ -32,7 +32,7 @@ def gimnasium():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """ One day, there was a manifestation against Claudemilson, and she didn´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
@@ -64,22 +64,22 @@ def gimnasium():
     _sala.norte.meio.vai = go_geography
     child_ = Elemento(child, tit = "reflector", drag=True,
         x = 210, y = 160, w = 334, h = 213, drop="child",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="Please help me, fix my name.")
     bars_ = Elemento(bars, tit = "grandstand", drag=True,
         x = 375, y = 3, w = 130, h = 70, drop="bars",
-        cena=_sala.norte, texto="please, help me, fix my name")
+        cena=_sala.norte, texto="Please help me, fix my name.")
     grandstand_ = Elemento(grandstand, tit = "bars",
         x = 330, y = 188, w = 187, h = 180, drop="grandstand",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="Please help me, fix my name.")
     reflector_ = Elemento(reflector, tit = "ball", drag=True,
         x = 700, y = 13, w = 100, h = 140, drop="reflector",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="Please help me, fix my name.")
     light_post_ = Elemento(light_post, tit = "child", drag=True,
-        x = 300, y = 2, w = 400, h = 380, drop="light_post",
-        cena=_sala.leste, texto="please, help me, fix my name")
-    ball_ = Elemento(ball, tit = "ligthpost",
+        x = 300, y = 2, w = 400, h = 380, drop="light post",
+        cena=_sala.leste, texto="Please help me, fix my name.")
+    ball_ = Elemento(ball, tit = "light post",
         x = 358, y = 210, w = 40, h = 40,drop="ball",
-        cena=_sala.norte, texto="please, help me, fix my name")
+        cena=_sala.norte, texto="Please help me, fix my name.")
     return _sala
 
 
