@@ -1,5 +1,5 @@
 # grete.callie.main.py
-#TEXTO E TIRINHA , ENTRAR NA SECRETARIA ( ESTA ENTRANDO NA GEOGRAFIA)
+#TEXTO E TIRINHA 
 from _spy.vitollino.main import Cena,Elemento,Texto
 kit_n = "https://i.imgur.com/98JoHe0.jpg"
 kit_s = "http://i.imgur.com/0Ix7Dd3.jpg"
@@ -39,7 +39,7 @@ def kitchen():
         historia = Cena(TIRINHA_COZINHA, _vai, _vai, _vai)
         texto = """Cleison Enrique opens the door of an abandoned cafeteria to find the documents of the cook. 
         He searches and searches for them, but can not find it . He calls the cook to say he did not find them.
-        When he reaches the cook, he sees her with a bandana on her head written âBecome Clademilsonâ.
+        When he reaches the cook, he sees her with a bandana on her head written âÂÂBecome ClademilsonâÂÂ.
 """
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
