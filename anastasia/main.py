@@ -1,4 +1,6 @@
 # grete.anastasia.main.py
+#REVISADO
+#COLOCAR PAREDES CORRETAS
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
