@@ -15,7 +15,7 @@ oliveoil = "https://i.imgur.com/IgdYch1.jpg"
 sweetner = "https://i.imgur.com/8oYmzyp.jpg"
 door_lock = "https://i.imgur.com/BmXgyxl.png"
 fogao = "https://i.imgur.com/fV5Xo6F.jpg"
-from _spy.vitollino.main import STYLE, INVENTARIO, Sala
+from _spy.vitollino.main import STYLE, INVENTARIO, Sala, Texto, Cena
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 PRR = None
