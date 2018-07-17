@@ -1,4 +1,5 @@
 # grete.callie.main.py
+#TEXTO E TIRINHA
 from _spy.vitollino.main import Cena,Elemento,Texto
 kit_n = "https://i.imgur.com/98JoHe0.jpg"
 kit_s = "http://i.imgur.com/0Ix7Dd3.jpg"
