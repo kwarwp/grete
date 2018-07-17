@@ -153,6 +153,15 @@ def geografia(oeste=False):
     def vai_trigo():
         from amanda.main import trigonometria
         trigonometria().norte.vai()
+        
+        
+    def _go_gymnasiun():
+        try:
+            gimnasium().sul.vai()
+        except:
+            from libby.main import gimnasium
+            gimnasium().sul.vai()
+
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
     mic = Elemento(MIC, tit="volcano", drag=False, drop="microscope",
@@ -164,6 +173,7 @@ def geografia(oeste=False):
                    style=panstyle, cena=_sala.leste, texto="Please help me, fix my name.")
     _ = mic, pan
     _sala.norte.meio = Cena(vai=vai_trigo)
+    _sala.sul.meio = _go_gymnasiun
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
 
