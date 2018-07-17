@@ -51,9 +51,9 @@ def school_house_():
         x = 300, y = 275, w = 100, h = 140, drop="vase",
         cena=_sala.norte, texto="please, help me, fix my name")
     ligth_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
-        x = 50, y = 40, w = 100, h = 100, drop="ligth fixture",
+        x = 50, y = 40, w = 100, h = 100, drop="light fixture",
         cena=_sala.sul, texto="please, help me, fix my name")
-    dispenser_ = Elemento(dispenser, tit = "ligth fixture",
+    dispenser_ = Elemento(dispenser, tit = "light fixture",
         x = 330, y = 325, w = 30, h = 40,drop="dispenser",
         cena=_sala.leste, texto="please, help me, fix my name")
     return _sala
