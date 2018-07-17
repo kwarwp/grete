@@ -56,7 +56,7 @@ def secretary():
         try:
             kitchen().oeste.vai()
         except:
-            from callie.main import kitchen as kitchen
+            from callie.main import kitchen 
             kitchen().oeste.vai()
         
     def _go_secretary():
@@ -82,6 +82,7 @@ He left and the three of them looked at him leaving, just turning their heads.
     SECRETARY = _sala = Sala(sn,sl,ss,so, "trig")
     from naomi.main import Elemento
     _sala.oeste.meio = Cena(TIRINHA_DA_SECRETARIA, vai = go_secretary)
+    _sala.sul.meio.vai = _go_kitchen
     bebedouro_ = Elemento(bebedouro, tit = "switch", drag=True,
         x = 460, y = 192, w = 80, h = 90, drop="drinking fountain",
         cena=_sala.sul, texto="Please help me, fix my name.")
