@@ -191,3 +191,10 @@ AttributeError: 'function' object has no attribute 'norte'
     _sala.sul.meio.vai = vai_geo
 NameError: name 'vai_geo' is not defined
 '''},
+{'date': 'Tue Jul 17 2018 01:44:23.860 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  def _go_room23():
+  ^
+IndentationError: unexpected indent
+'''},
