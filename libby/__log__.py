@@ -93,3 +93,10 @@ Exception: <SyntaxError: return not in function>
 'error': '''
 Exception: <SyntaxError: return not in function>
 '''},
+{'date': 'Mon Jul 16 2018 22:06:18.152 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  TIRINHA_DA_SECRETARIA= "https://i.imgur.com/PZb3uE3.png
+                                                         ^
+SyntaxError: EOL while scanning string literal
+'''},
