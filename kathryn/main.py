@@ -1,5 +1,6 @@
 # grete.kathryn.main.py
 #TIRINHA E TEXTO
+#REVISADO PRONTO
 from _spy.vitollino.main import Cena,Elemento,Texto, INVENTARIO, STYLE
 STYLE.update(width=800, height="600px")
 CLASS1 = "https://i.imgur.com/KsJNT1W.jpg"
