@@ -32,7 +32,7 @@ def trigonometria():
 
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
-    _sala.oeste.meio.vai = _go_geography
+    _sala.oeste.meio = Cena(vai=_go_geography)
     parap = Elemento(parapeito, tit = "socket", drag=True,
         x = 610, y = 300, w = 80, h = 90, drop="sill",
         cena=_sala.norte, texto="Please help me, fix my name.")
