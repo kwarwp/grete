@@ -51,7 +51,7 @@ def kitchen():
     PRR = _sala = Sala(kit_n,kit_o,kit_l,kit_s, "principal")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
-    _sala.leste.meio.vai = _go_secretary
+    _sala.leste.meio = Cena(vai = _go_secretary)
     grao = Elemento(grao_de_bico, tit = "suction hood", drag=True,
         x = 670, y = 390, w = 100, h = 100, drop="chick peas",
        cena=_sala.leste, texto="Please help me, fix my name.")
