@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
-TIRINHA_PRINCIPALS_ROOM = "https://i.imgur.com/9U9odga.png"
+TIRINHA_PRINCIPALS_ROOM = "https://i.imgur.com/UmMqUyl.png"
 Principals_room_n = "https://i.imgur.com/U9ixbT0.jpg"
 Principals_room_o = "https://i.imgur.com/gxOcDsS.jpg"
 Principals_room_l = "https://i.imgur.com/SV1Ko1N.jpg"
