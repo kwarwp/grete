@@ -1,4 +1,5 @@
 # grete.lisa.main.py
+#REVISADO
 from _spy.vitollino.main import Cena,Elemento,Texto
 from _spy.vitollino.main import STYLE, INVENTARIO, Sala
 STYLE["width"] = 800
