@@ -1,5 +1,5 @@
 # grete.lisa.main.py
-#REVISADO
+#REVISADO PRONTO
 from _spy.vitollino.main import Cena,Elemento,Texto
 from _spy.vitollino.main import STYLE, INVENTARIO, Sala
 STYLE["width"] = 800
@@ -44,10 +44,10 @@ def room23():
         return ROOM
     def _gone_room23():
         try:
-            school_house().sul.vai()
+            school_house_().sul.vai()
         except:
-            from courtney.main import school_house
-            school_house().sul.vai()    
+            from courtney.main import school_house_
+            school_house_().sul.vai()    
         
            
     def _vai_room23():
