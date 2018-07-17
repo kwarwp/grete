@@ -94,3 +94,23 @@ AttributeError: 'NoneType' object has no attribute 'oeste'
     _sala.sul.meio = Cena(vai=_go_gymnasiun)
 NameError: name '_go_gymnasiun' is not defined
 '''},
+{'date': 'Tue Jul 17 2018 13:14:18.680 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 207
+    geografia().sul.vai()
+  module <module> line 186
+    mic = Elemento(MIC, tit="volcano", drag=False, drop="microscope",
+  module <module> line 63
+    Elemento._score._scorer_()
+AttributeError: 'NoneType' object has no attribute '_scorer_'
+'''},
