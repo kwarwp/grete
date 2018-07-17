@@ -31,10 +31,10 @@ def trigonometria():
             from naomi.main import geografia as geography
             geography().oeste.vai()
     def _go_trigonometria():
-        trigonometria_.norte.meio = Cena(vai=_gone_trigonometria)
+        TRIG.norte.meio = Cena(vai=_gone_geography)
         _vai = Cena()
         def redir():
-            _vai.vai = _gone_trigonometria
+            _vai.vai = _gone_geography
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """ Cleison decides to go to the computer to see videos of kittens. As he sat on the chair, 
         he slapped his arm on the sill.Ouch, it hurts. - The sill say. - I am Sorry.  Says Cleison - It is so
@@ -56,7 +56,7 @@ def trigonometria():
             geography().oeste.vai()
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
-    _sala.leste.meio = Cena(vai=go_geography)
+    _sala.leste.meio = Cena(vai=go_trigonometria)
     #_sala.oeste.meio.vai = _go_geography
     parap = Elemento(parapeito, tit = "socket", drag=True,
         x = 610, y = 300, w = 80, h = 90, drop="sill",
@@ -103,7 +103,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
