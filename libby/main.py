@@ -74,22 +74,22 @@ def secretary():
     _sala.oeste.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = go_secretary)
     bebedouro_ = Elemento(bebedouro, tit = "switch", drag=True,
         x = 460, y = 192, w = 80, h = 90, drop="drinking fountain",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="Please help me, fix my name.")
     tomada_ = Elemento(tomada, tit = "thermal bottle", drag=True,
         x = 185, y = 30, w = 80, h = 100, drop="socket",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please help me, fix my name.")
     extintor_ = Elemento(extintor, tit = "socket", drag=True,
         x = 30, y = 500, w = 100, h = 120,drop="fire extinguisher",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please help me, fix my name.")
     garrafa_termica_ = Elemento(garrafa_termica, tit = "fire extinguisher", drag=True,
         x = 520, y = 220, w = 90, h = 60, drop="thermal bottle",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="Please help me, fix my name.")
     interfone_ = Elemento(interfone, tit = "switch", drag=True,
         x = 700, y = 220, w = 90, h = 60, drop="communicator",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="Please help me, fix my name.")
     interruptor_ = Elemento(interruptor, tit = "communicator", drag=True,
         x = 100, y = 220, w = 90, h = 60, drop="switch",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="Please help me, fix my name.")
     return _sala
 
 if __name__ == "__main__": 
