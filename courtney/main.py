@@ -14,29 +14,29 @@ dispenser = "https://i.imgur.com/o9raZp8.jpg"
 napkin_holder = "https://i.imgur.com/czetnka.jpg"
 school_house = None
 def school_house_():
-    global school_house_
-    if school_house_:
-        return school_house_
+    global school_house
+    if school_house:
+        return school_house
         
     def _gone_school_house():
         try:
-            schoolhouse().sul.vai()
+            school_house_().sul.vai()
         except:
             from libby.main import gymnasium
             gymnasium().leste.vai()
         
     def _go_school_house():
-        school_house_.sul.meio.vai = _gone_school_house
+        school_house.sul.meio.vai = _gone_school_house
         _vai = Cena(TIRINHA_DO_CLAUDEMILSON)
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """ One day, there was a manifestation against Claudemilson, and she didnÃÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        texto = """ One day, there was a manifestation against Claudemilson, and she did not like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
     school_house = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_geo
+    _sala.sul.meio.vai = _go_school_house
     napkin_holder_ = Elemento(napkin_holder, tit = "vase", drag=True,
         x = 310, y = 450, w = 70, h = 60, drop="napkin_holder",
         cena=_sala.norte, texto="please, help me, fix my name")
