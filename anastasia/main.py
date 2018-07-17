@@ -33,7 +33,7 @@ def gimnasium():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂÂÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
@@ -76,9 +76,9 @@ def gimnasium():
         x = 700, y = 13, w = 100, h = 140, drop="reflector",
         cena=_sala.oeste, texto="please, help me, fix my name")
     light_post_ = Elemento(light_post, tit = "child", drag=True,
-        x = 300, y = 2, w = 400, h = 380, drop="light_post",
+        x = 300, y = 2, w = 400, h = 380, drop="lightpost",
         cena=_sala.leste, texto="please, help me, fix my name")
-    ball_ = Elemento(ball, tit = "ligthpost",
+    ball_ = Elemento(ball, tit = "lightpost",
         x = 358, y = 210, w = 40, h = 40,drop="ball",
         cena=_sala.norte, texto="please, help me, fix my name")
     return _sala
