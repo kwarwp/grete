@@ -62,7 +62,10 @@ class Elemento(Element):
         self.do_drag(drag)
         self.do_drop(drop)
         Elemento._scorer_()
-
+    def do_score(self, tit):
+        if tit not in FIX_SCORE:
+            FIX_SCORE[tit] = int(Elemento._score.score_.html) + 1
+            Elemento._score.score_.html = FIX_SCORE[tit]
     @classmethod
     def _scorer_(cls):
         Elemento._scorer_ = lambda *_ : None
