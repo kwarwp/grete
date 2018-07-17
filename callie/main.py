@@ -5,6 +5,7 @@ kit_n = "https://i.imgur.com/98JoHe0.jpg"
 kit_s = "http://i.imgur.com/0Ix7Dd3.jpg"
 kit_l = "https://i.imgur.com/0Zztrs5.jpg"
 kit_o = "https://i.imgur.com/S12NoXf.jpg"
+TIRINHA_COZINHA = "https://i.imgur.com/FOBDPn4.png"
 
 #Objects:
 grao_de_bico = "https://i.imgur.com/JdP7kbV.jpg"
