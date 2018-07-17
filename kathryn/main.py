@@ -23,6 +23,13 @@ def trigonometria():
     if TRIG:
         return TRIG
         
+    def _go_geography():
+        try:
+            geography().leste.vai()
+        except:
+            from kathryn.main import geografia as geography
+            geography().leste.vai()
+        
     def vai_geo():
         from naomi.main import geografia
         geografia().sul.vai()
@@ -74,7 +81,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÃÂÂÂÂÂÂÂÂÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
