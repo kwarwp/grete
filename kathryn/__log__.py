@@ -89,3 +89,21 @@ UnboundLocalError: local variable 'interruptor' referenced before assignment
     toma = Elemento(tomda, tit = "tomada", drag=True,
 NameError: name 'tomda' is not defined
 '''},
+{'date': 'Tue Jul 17 2018 03:11:01.973 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 82
+    trigonometria().norte.vai()
+  module <module> line 59
+    _sala.leste.meio = Cena(vai=_go_geography)
+NameError: name '_go_geography' is not defined
+'''},
