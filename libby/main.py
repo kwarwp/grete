@@ -57,12 +57,14 @@ def secretary():
         def redir():
             _vai.vai = _gone_secretary
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """Cleison enter the school excitedly and sees the three excited secretaries boring, totally boring, that you would even want to die of so boring that they were. 
-He went to talk  to them, and getting closer, he saw  on their  shirts ,the following phrase : 
-‘ Become Claudemilson”.He said”hello” and they just said : “ Become Claudemillson  where’s your shirt?”
+        texto = """Cleison enteres the school excitedly and sees the three secretaries. Boring, 
+so boring that you would even want to die just to look at them. 
+He went to speak to them. Getting closer, he saw  on their  shirts the following sentence : 
+'Become Claudemilson'. He said hello and they answerd:
+-Become Claudemillson! Where is your shirt?
 He said:
--I’m a former student, I just come to visit the school, then excuse me .                            book                                           leaving.
-He got away, and the there of them looking at him leaving, just turning their heads, without booking away.
+-I am a former student, I just came to visit the school. See you!
+He left and the three of them looked at him leaving, just turning their heads.
 """
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
