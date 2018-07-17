@@ -56,13 +56,13 @@ def trigonometria():
             _vai.vai = _foi_geo
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """The Lunch Kiddo!---Cleison pass throw the corridor but then he sees the 23 classroom lost dreams song.
-the boy enters there and sees a different room: there’s a missing space! Then, Cleison
-looks at the little door beside the board written “Become Robervald. Become Claudemilson.”,
-He walks to the little door and he opens it: It’s the janitor’s room, weird… Cleison starts sneezing
+the boy enters there and sees a different room: thereâs a missing space! Then, Cleison
+looks at the little door beside the board written âBecome Robervald. Become Claudemilson.â,
+He walks to the little door and he opens it: Itâs the janitorâs room, weirdâ¦ Cleison starts sneezing
 all over the place, because it was too dirty , and at the same time, he was blowing the dust away, 
-so he could see his locker, it was written “Lunch Kiddo”. A tear fell from his eye. He remembered 
+so he could see his locker, it was written âLunch Kiddoâ. A tear fell from his eye. He remembered 
 Elianildes, an old canteen employee, and his friend too. After so much sentimentality, he heard a
-noise inside the neighbour locker; he opened it and seen an afraid puppy, that Cleison called “Sadboy”,
+noise inside the neighbour locker; he opened it and seen an afraid puppy, that Cleison called âSadboyâ,
 but the dog was so excited! They were playing,when they heared a deafening sound of feet stepping on the 
 floor. Sadboy ran away and Cleison was alone and without choice, when...
 """
@@ -74,14 +74,14 @@ floor. Sadboy ran away and Cleison was alone and without choice, when...
     TRIG = _sala = Sala(CLASS23A,CLASS23B,CLASS23C,CLASS23D, "trig")
     from naomi.main import Elemento
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
-    ampulheta = Elemento(ampulheta_, tit = "sprinkler", drag=True,
+    ampulheta = Elemento(ampulheta_, tit = "sprayer", drag=True,
         x =500, y = 440, w = 60, h = 60, drop="hourglass",
         cena=_sala.leste, texto="please, help me, fix my name")
     estojo = Elemento(estojo_, tit = "broom", drag=True,
         x = 260, y = 410, w = 180, h = 100, drop="pencilcase",
         cena=_sala.leste, texto="please, help me, fix my name")
     borrifador = Elemento(borrifador_, tit = "envelope", drag=True,
-        x =490, y = 390, w = 120, h = 130, drop="sprinkler",
+        x =490, y = 390, w = 120, h = 130, drop="sprayer",
         cena=_sala.sul, texto="please, help me, fix my name")
     envelope = Elemento(envelope_, tit = "pencilcase", drag=True,
         x = 100, y = 10, w = 80, h = 100, drop="envelope",
