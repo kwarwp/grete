@@ -32,25 +32,24 @@ def kitchen():
             secretary().sul.vai()    
    
     def _go_kitchen():
-        kitchen.leste.meio.vai = _gone_kitchen
+        kitchen.leste.meio= Cena(vai = _gone_kitchen)
         _vai = Cena()
         def redir():
             _vai.vai = _gone_kitchen
         historia = Cena(TIRINHA_COZINHA, _vai, _vai, _vai)
         texto = """Cleison Enrique opens the door of an abandoned cafeteria to find the documents of the cook. 
         He searches and searches for them, but can not find it . He calls the cook to say he did not find them.
-        When he reaches the cook, he sees her with a bandana on her head written ‘Become Clademilson’.
+        When he reaches the cook, he sees her with a bandana on her head written âBecome Clademilsonâ.
 """
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
         
-    def vai_geo():
-        from naomi.main import geografia
-        geografia().sul.vai()
+    def go_kitchen():
+        _go_kitchen() 
+        
     PRR = _sala = Sala(kit_n,kit_o,kit_l,kit_s, "principal")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_geo
     _sala.leste.meio = Cena(vai = _go_secretary)
     grao = Elemento(grao_de_bico, tit = "suction hood", drag=True,
         x = 670, y = 390, w = 100, h = 100, drop="chick peas",
