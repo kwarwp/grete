@@ -1,5 +1,5 @@
 # grete.courtney.main.py
-#TIRINHA?
+#RESOLVIDO -PRONTO
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
@@ -17,7 +17,7 @@ TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
 
 School_House = None
 def school_house_():
-    global school_house
+    global School_House
     if School_House:
         return School_House
         
@@ -35,10 +35,10 @@ def school_house_():
             room23().norte.vai()
         
     def _go_school_house_():
-        school_house.sul.meio.vai = _gone_school_house
+        School_House.sul.meio = Cena(vai=_gone_school_house_)
         _vai = Cena()
         def redir():
-            _vai.vai = _gone_school_house
+            _vai.vai = _gone_school_house_
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
         texto = """ One day, there was a manifestation against Claudemilson,
         and she did not like it at all. So she made the demonstrators hear 'Funk Carioca' during 10 hours... """ 
@@ -46,10 +46,10 @@ def school_house_():
         historia.vai()
     def go_school_house():
         _go_school_house_()
-    school_house_ = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
+    School_House = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = _go_school_house_
-    _sala.norte.meio.vai = _go_room23
+    _sala.sul.meio = Cena(vai=go_school_house)
+    _sala.norte.meio = Cena(vai=_go_room23)
     napkin_holder_ = Elemento(napkin_holder, tit = "vase", drag=True,
         x = 310, y = 450, w = 70, h = 60, drop="napkin holder",
         cena=_sala.norte, texto="Please help me, fix my name.")
