@@ -76,19 +76,19 @@ floor. Sadboy ran away and Cleison was alone and without choice, when...
     _sala.sul.meio = Cena(TIRINHA_DO_CLAUDEMILSON, vai = vai_geo)
     ampulheta = Elemento(ampulheta_, tit = "sprayer", drag=True,
         x =500, y = 440, w = 60, h = 60, drop="hourglass",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please help me, fix my name.")
     estojo = Elemento(estojo_, tit = "broom", drag=True,
         x = 260, y = 410, w = 180, h = 100, drop="pencilcase",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please help me, fix my name.")
     borrifador = Elemento(borrifador_, tit = "envelope", drag=True,
         x =490, y = 390, w = 120, h = 130, drop="sprayer",
-        cena=_sala.sul, texto="please, help me, fix my name")
+        cena=_sala.sul, texto="Please help me, fix my name.")
     envelope = Elemento(envelope_, tit = "pencilcase", drag=True,
         x = 100, y = 10, w = 80, h = 100, drop="envelope",
-        cena=_sala.norte, texto="please, help me, fix my name")
+        cena=_sala.norte, texto="Please help me, fix my name.")
     vassoura = Elemento(vassoura_, tit = "hourglass", drag=True,
         x = 44, y = 210, w = 280, h = 390, drop="broom",
-        cena=_sala.oeste, texto="please, help me, fix my name")
+        cena=_sala.oeste, texto="Please help me, fix my name.")
         
     return _sala
 
