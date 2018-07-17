@@ -30,10 +30,10 @@ def kitchen():
     _sala.sul.meio.vai = vai_geo
     grao = Elemento(grao_de_bico, tit = "suction hood", drag=True,
         x = 670, y = 390, w = 100, h = 100, drop="chick peas",
-       cena=_sala.oeste, texto="Please help me, fix my name.")
+       cena=_sala.leste, texto="Please help me, fix my name.")
     coif = Elemento(coifa, tit = "chick peas", drag=True,
         x = 0, y = 0, w = 700, h = 100, drop="suction hood",
-        cena=_sala.leste, texto="Please help me, fix my name.")
+        cena=_sala.sul, texto="Please help me, fix my name.")
 
     sweet_potato = Elemento(sweetpotato, tit = "olive oil", drop="sweet potato",
         x = 740, y = 500, w = 60, h = 60,
@@ -43,13 +43,13 @@ def kitchen():
        cena=_sala.norte, texto="Please help me, fix my name.")
     doorl = Elemento(door_lock, tit = "stove", drag=True,
         x = 440, y = 420, w = 80, h = 100, drop="door lock",
-        cena=_sala.oeste, texto="Please help me, fix my name.")
+        cena=_sala.leste, texto="Please help me, fix my name.")
     adocante = Elemento(sweetner, tit = "door lock", drop="sweetner",
         x = 350, y = 530, w = 100, h = 70,
         cena=_sala.norte, texto="Please help me, fix my name.")
     cokie = Elemento(fogao, tit = "sweetner", drop="stove",
         x = 500, y = 500, w = 100, h = 120,
-        cena=_sala.leste, texto="Please help me, fix my name.")
+        cena=_sala.sul, texto="Please help me, fix my name.")
 
     return _sala
 
