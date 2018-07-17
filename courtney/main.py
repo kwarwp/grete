@@ -29,12 +29,12 @@ def school_house_():
             gimnasium().leste.vai()
     def _go_room23():
         try:
-            room23().oeste.vai()
+            room23().norte.vai()
         except:
             from lisa.main import room23 
-            room23().oeste.vai()
+            room23().norte.vai()
         
-    def _go_school_house():
+    def _go_school_house_():
         school_house.sul.meio.vai = _gone_school_house
         _vai = Cena()
         def redir():
@@ -45,10 +45,10 @@ def school_house_():
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
     def go_school_house():
-        _go_school_house()
-    school_house = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
+        _go_school_house_()
+    school_house_ = _sala = Sala(school_house_n,school_house_l,school_house_s,school_house_o, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = _go_school_house
+    _sala.sul.meio.vai = _go_school_house_
     _sala.norte.meio.vai = _go_room23
     napkin_holder_ = Elemento(napkin_holder, tit = "vase", drag=True,
         x = 310, y = 450, w = 70, h = 60, drop="napkin holder",
