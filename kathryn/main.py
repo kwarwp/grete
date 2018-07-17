@@ -17,6 +17,7 @@ interruptor = "https://i.imgur.com/5P3D5pp.jpg"
 tomada = "https://i.imgur.com/FWRj0jJ.jpg"
 monitor = "https://i.imgur.com/RgsKMmR.jpg"
 parapeito = "https://i.imgur.com/r1wZeyw.jpg"
+TIRINHA_DO_CLAUDEMILSON ="https://i.imgur.com/2krCeWj.png"
 TRIG = None
 def trigonometria():
     global TRIG
@@ -79,7 +80,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
