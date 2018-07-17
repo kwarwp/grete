@@ -28,7 +28,7 @@ def gimnasium():
             secretary().sul.vai()
         
     def _go_gimnasiun():
-        gimnasium_.sul.meio = Cena(vai=_gone_gimnasiun)
+        gimnasium_.norte.meio = Cena(vai=_gone_gimnasiun)
         _vai = Cena()
         def redir():
             _vai.vai = _gone_gimnasiun
