@@ -24,13 +24,36 @@ def trigonometria():
     if TRIG:
         return TRIG
         
-    def _go_geography():
+    def _gone_geography():
         try:
             geography().oeste.vai()
         except:
             from naomi.main import geografia as geography
             geography().oeste.vai()
-
+    def _go_trigonometria():
+        trigonometria_.norte.meio = Cena(vai=_gone_trigonometria)
+        _vai = Cena()
+        def redir():
+            _vai.vai = _gone_trigonometria
+        historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
+        texto = """ Cleison decides to go to the computer to see videos of kittens. As he sat on the chair, 
+        he slapped his arm on the sill.Ouch, it hurts. - The sill say. - I am Sorry.  Says Cleison - It is so
+        dark in here, I will turn on the lights. When he turns it on:- Ouch!!Cried the switch. Sorry again. 
+        Why do you feel so much pain? It is because Claudemilson cast a spell on us and now we feel pain 
+        all the time.But why does she do that??? It is because when we feel pain we are pro-Claudemilson.
+ """ 
+        _vai.vai = Texto(historia, '', texto, foi=redir).vai
+        historia.vai()        
+        
+    def go_trigonometria():
+        _go_trigonometria()   
+        
+    def go_geography():
+        try:
+            geography().norte.vai()
+        except:
+            from naomi.main import geography
+            geography().oeste.vai()
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
     _sala.leste.meio = Cena(vai=_go_geography)
