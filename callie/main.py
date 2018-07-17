@@ -8,9 +8,10 @@ kit_l = "https://i.imgur.com/S12NoXf.jpg"
 #Objects:
 grao_de_bico = "https://i.imgur.com/JdP7kbV.jpg"
 coifa = "https://i.imgur.com/6pbktzm.jpg"
-batata_doce = "https://i.imgur.com/OkdQ390.jpg"
-azeite = "https://i.imgur.com/IgdYch1.jpg"
-adocante = "https://i.imgur.com/8oYmzyp.jpg"
+sweetpotato = "https://i.imgur.com/OkdQ390.jpg"
+oliveoil = "https://i.imgur.com/IgdYch1.jpg"
+sweetner = "https://i.imgur.com/8oYmzyp.jpg"
+door_lock = "https://i.imgur.com/BmXgyxl.png"
 fogao = "https://i.imgur.com/fV5Xo6F.jpg"
 from _spy.vitollino.main import STYLE, INVENTARIO, Sala
 STYLE["width"] = 800
@@ -24,31 +25,31 @@ def kitchen():
     def vai_geo():
         from naomi.main import geografia
         geografia().sul.vai()
-    PRR = _sala = Sala(Principals_room_n,Principals_room_o,Principals_room_l,Principals_room_s, "principal")
+    PRR = _sala = Sala(kit_n,kit_o,kit_l,kit_s, "principal")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
     grao = Elemento(grao_de_bico, tit = "coif", drag=True,
-        x = 480, y = 140, w = 180, h = 290, drop="grao",
-       cena=_sala.norte, texto="please, help me, fix my name")
+        x = 670, y = 390, w = 100, h = 100, drop="grao",
+       cena=_sala.sul, texto="please, help me, fix my name")
     coif = Elemento(coifa, tit = "chick peas", drag=True,
-        x = 260, y = 410, w = 80, h = 100, drop="coifa",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        x = 0, y = 0, w = 700, h = 100, drop="coif",
+        cena=_sala.oeste, texto="please, help me, fix my name")
 
-    sweet_potato = Elemento(sweetpotato, tit = "olive oil", drop="batata",
-        x = 500, y = 5, w = 100, h = 120,
+    sweet_potato = Elemento(sweetpotato, tit = "olive oil", drop="sweet potato",
+        x = 740, y = 500, w = 60, h = 60,
         cena=_sala.norte, texto="please, help me, fix my name")
     olive_oil = Elemento(oliveoil, tit = "sweet potato", drag=True,
-        x = 510, y = 360, w = 100, h = 90, drop="glow ball",
-       cena=_sala.leste, texto="please, help me, fix my name")
-    doorl = Elemento(door_lock, tit = "keyboard", drag=True,
-        x = 440, y = 380, w = 80, h = 100, 
+        x = 210, y = 510, w = 100, h = 90, drop="olive oil",
+       cena=_sala.norte, texto="please, help me, fix my name")
+    doorl = Elemento(door_lock, tit = "stove", drag=True,
+        x = 440, y = 420, w = 80, h = 100, drop="door lock",
         cena=_sala.sul, texto="please, help me, fix my name")
-    adocante = Elemento(sweetner, tit = "cokie", drop="keyboard",
-        x = 300, y = 300, w = 100, h = 70,
-        cena=_sala.leste, texto="please, help me, fix my name")
-    cokie = Elemento(fogao, tit = "sweetner", drop="cano",
-        x = 500, y = 5, w = 100, h = 120,
+    adocante = Elemento(sweetner, tit = "door lock", drop="sweetner",
+        x = 350, y = 530, w = 100, h = 70,
         cena=_sala.norte, texto="please, help me, fix my name")
+    cokie = Elemento(fogao, tit = "sweetner", drop="stove",
+        x = 500, y = 500, w = 100, h = 120,
+        cena=_sala.oeste, texto="please, help me, fix my name")
 
     return _sala
 
