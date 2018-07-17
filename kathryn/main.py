@@ -32,7 +32,7 @@ def trigonometria():
 
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
-    _sala.oeste.meio = Cena(vai=_go_geography)
+    _sala.leste.meio = Cena(vai=_go_geography)
     #_sala.oeste.meio.vai = _go_geography
     parap = Elemento(parapeito, tit = "socket", drag=True,
         x = 610, y = 300, w = 80, h = 90, drop="sill",
@@ -79,7 +79,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂÂÂÂÂÂÂÂÃÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
