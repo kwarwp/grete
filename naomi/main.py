@@ -155,12 +155,12 @@ def geografia(oeste=False):
         trigonometria().norte.vai()
         
         
-    def _go_gymnasiun():
+    def _go_gymnasium():
         try:
-            gimnasium().sul.vai()
+            gimnasium().norte.vai()
         except:
-            from libby.main import gimnasium
-            gimnasium().sul.vai()
+            from anastasia.main import gimnasium
+            gimnasium().norte.vai()
         
         
     def _go_geometry():
@@ -181,7 +181,8 @@ def geografia(oeste=False):
                    style=panstyle, cena=_sala.leste, texto="Please help me, fix my name.")
     _ = mic, pan
     _sala.norte.meio = Cena(vai=vai_trigo)
-    _sala.sul.meio = Cena(vai=_go_gymnasiun)
+    #_sala.sul.meio.vai = _go_gymnasium
+    _sala.sul.meio = Cena(vai=_go_gymnasium)
     _sala.leste.meio = Cena(vai=_go_geometry)
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
