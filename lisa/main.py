@@ -55,16 +55,16 @@ def trigonometria():
         def redir():
             _vai.vai = _foi_geo
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """The Lunch Kiddo!---Cleison pass throw the corridor but then he sees the 23 classroom lost dreams song.
-the boy enters there and sees a different room: thereâs a missing space! Then, Cleison
-looks at the little door beside the board written âBecome Robervald. Become Claudemilson.â,
-He walks to the little door and he opens it: Itâs the janitorâs room, weirdâ¦ Cleison starts sneezing
-all over the place, because it was too dirty , and at the same time, he was blowing the dust away, 
-so he could see his locker, it was written âLunch Kiddoâ. A tear fell from his eye. He remembered 
+        texto = """The Lunch Kiddo!---Cleison passes through the corridor but then he sees the classroom 23.
+The boy enters it and sees a different room: there is something missing! Cleison
+looks at the little door beside the board written 'Become Robervald'.'Become Claudemilson'.
+He walks to the little door and he opens it: Its the janitor's room, weird! Cleison starts sneezing
+all over the place, because it was too dirty. At the same time that  he was walking around, he was also blowing the dust away, 
+so he could find his old locker, it was written 'Lunch Kiddo'. A tear fell from his eye. He remembered 
 Elianildes, an old canteen employee, and his friend too. After so much sentimentality, he heard a
-noise inside the neighbour locker; he opened it and seen an afraid puppy, that Cleison called âSadboyâ,
-but the dog was so excited! They were playing,when they heared a deafening sound of feet stepping on the 
-floor. Sadboy ran away and Cleison was alone and without choice, when...
+noise inside the locker next to his; he opened it and seen an afraid puppy. He called him 'Sadboy',
+even though it was excited to see him! They were playing, when they heared a deafening sound of footsteps on the 
+floor. Sadboy ran away and Cleison was alone and without any choice, when suddenly...
 """
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
