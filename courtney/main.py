@@ -38,9 +38,9 @@ def school_house_():
     from naomi.main import Elemento
     _sala.sul.meio.vai = _go_school_house
     napkin_holder_ = Elemento(napkin_holder, tit = "vase", drag=True,
-        x = 310, y = 450, w = 70, h = 60, drop="napkin_holder",
+        x = 310, y = 450, w = 70, h = 60, drop="napkin holder",
         cena=_sala.norte, texto="please, help me, fix my name")
-    microwave_ = Elemento(microwave, tit = "napkin_holder", drag=True,
+    microwave_ = Elemento(microwave, tit = "napkin holder", drag=True,
         x = 430, y = 100, w = 200, h = 150, drop="microwave",
         cena=_sala.oeste, texto="please, help me, fix my name")
     spray_ = Elemento(spray, tit = "dispenser",
@@ -50,9 +50,9 @@ def school_house_():
         x = 300, y = 275, w = 100, h = 140, drop="vase",
         cena=_sala.norte, texto="please, help me, fix my name")
     ligth_fixture_ = Elemento(ligth_fixture, tit = "microwave", drag=True,
-        x = 50, y = 40, w = 100, h = 100, drop="ligth_fixture",
+        x = 50, y = 40, w = 100, h = 100, drop="ligth fixture",
         cena=_sala.sul, texto="please, help me, fix my name")
-    dispenser_ = Elemento(dispenser, tit = "ligth_fixture",
+    dispenser_ = Elemento(dispenser, tit = "ligth fixture",
         x = 330, y = 325, w = 30, h = 40,drop="dispenser",
         cena=_sala.leste, texto="please, help me, fix my name")
     return _sala
