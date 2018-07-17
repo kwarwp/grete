@@ -114,3 +114,7 @@ NameError: name '_go_gymnasiun' is not defined
     Elemento._score._scorer_()
 AttributeError: 'NoneType' object has no attribute '_scorer_'
 '''},
+{'date': 'Tue Jul 17 2018 13:15:22.550 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <RangeError: Maximum call stack size exceeded>
+'''},
