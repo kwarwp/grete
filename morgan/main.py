@@ -58,23 +58,23 @@ When he ran away, he got into his car and went around desperately, but a traffic
     from naomi.main import Elemento
     _sala.sul.meio.vai = go_principalsroom
     caixa = Elemento(caixa_mae, tit = "pipe", drag=True,
-        x = 480, y = 140, w = 180, h = 290, drop="glow ball",
+        x = 480, y = 140, w = 180, h = 290, drop="router rack",
        cena=_sala.norte, texto="please, help me, fix my name")
     clip  = Elemento(clips, tit = "power plug", drag=True,
         x = 260, y = 410, w = 80, h = 100, drop="clips",
         cena=_sala.leste, texto="please, help me, fix my name")
 
-    pipes = Elemento(pipe, tit = "router rack", drop="cano",
+    pipes = Elemento(pipe, tit = "router rack", drop="pipes",
         x = 500, y = 5, w = 100, h = 120,
         cena=_sala.norte, texto="please, help me, fix my name")
     power = Elemento(power_plug, tit = "locker", drag=True,
-        x = 510, y = 360, w = 100, h = 90, drop="glow ball",
+        x = 510, y = 360, w = 100, h = 90, drop="power plug",
        cena=_sala.leste, texto="please, help me, fix my name")
     doorl = Elemento(door_lock, tit = "keyboard", drag=True,
-        x = 440, y = 380, w = 80, h = 100, 
+        x = 440, y = 380, w = 80, h = 100, drop="locker"
         cena=_sala.sul, texto="please, help me, fix my name")
-    keyboard_ = Elemento(keyboard, tit = "clip", drop="keyboard",
-        x = 300, y = 300, w = 100, h = 70,
+    keyboard_ = Elemento(keyboard, tit = "clip", drag=True,
+        x = 300, y = 300, w = 100, h = 70,drop="keyboard",
         cena=_sala.leste, texto="please, help me, fix my name")
 
     return _sala
