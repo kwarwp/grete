@@ -107,3 +107,10 @@ NameError: name 'tomda' is not defined
     _sala.leste.meio = Cena(vai=_go_geography)
 NameError: name '_go_geography' is not defined
 '''},
+{'date': 'Tue Jul 17 2018 03:16:13.605 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  def go_trigonometria():
+  ^
+IndentationError: unexpected indent
+'''},
