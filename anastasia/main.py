@@ -45,6 +45,13 @@ def gimnasium():
         except:
             from courtney.main import school_house_
             school_house_().norte.vai()
+        
+    def go_geography():
+        try:
+            geografia().norte.vai()
+        except:
+            from naomi.main import geografia
+            geografia().norte.vai()
 
         
     def __go_gimnasiun():
@@ -54,6 +61,7 @@ def gimnasium():
     from naomi.main import Elemento
     _sala.sul.meio.vai = go_gimnasiun
     _sala.oeste.meio.vai = go_school_house
+    _sala.norte.meio.vai = go_geography
     child_ = Elemento(child, tit = "reflector", drag=True,
         x = 210, y = 160, w = 334, h = 213, drop="child",
         cena=_sala.sul, texto="please, help me, fix my name")
