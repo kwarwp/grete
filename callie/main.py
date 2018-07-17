@@ -24,7 +24,7 @@ def kitchen():
     if PRR:
         return PRR
     
-    def _go_secretary():
+    def _gone_kitchen():
         try:
             secretary().sul.vai()
         except:
@@ -32,14 +32,14 @@ def kitchen():
             secretary().sul.vai()    
    
     def _go_kitchen():
-        kitchen.leste.meio= Cena(vai = _gone_kitchen)
+        PRR.leste.meio= Cena(vai = _gone_kitchen)
         _vai = Cena()
         def redir():
             _vai.vai = _gone_kitchen
         historia = Cena(TIRINHA_COZINHA, _vai, _vai, _vai)
         texto = """Cleison Enrique opens the door of an abandoned cafeteria to find the documents of the cook. 
         He searches and searches for them, but can not find it . He calls the cook to say he did not find them.
-        When he reaches the cook, he sees her with a bandana on her head written âÂÂBecome ClademilsonâÂÂ.
+        When he reaches the cook, he sees her with a bandana on her head written "Become Clademilson".
 """
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
@@ -50,7 +50,7 @@ def kitchen():
         
     PRR = _sala = Sala(kit_n,kit_o,kit_l,kit_s, "principal")
     from naomi.main import Elemento
-    _sala.leste.meio = Cena(vai = _go_secretary)
+    _sala.leste.meio = Cena(vai = go_kitchen)
     grao = Elemento(grao_de_bico, tit = "suction hood", drag=True,
         x = 670, y = 390, w = 100, h = 100, drop="chick peas",
        cena=_sala.leste, texto="Please help me, fix my name.")
