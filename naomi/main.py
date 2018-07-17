@@ -12,6 +12,7 @@ LGEO = "https://i.imgur.com/zb8RS7U.jpg"
 SGEO = "https://i.imgur.com/iybLHJK.jpg"
 OGEO = "https://i.imgur.com/js589HB.jpg"
 CORRECT = "My correct name: {}"
+SCORE = "https://www.iconsdb.com/icons/preview/white/square-rounded-xxl.png"
 NDCT = {}
 FIX_COUNT = {}
 
