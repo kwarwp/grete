@@ -28,11 +28,11 @@ def kitchen():
     PRR = _sala = Sala(kit_n,kit_o,kit_l,kit_s, "principal")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
-    grao = Elemento(grao_de_bico, tit = "coif", drag=True,
+    grao = Elemento(grao_de_bico, tit = "suction hood", drag=True,
         x = 670, y = 390, w = 100, h = 100, drop="chick peas",
        cena=_sala.sul, texto="Please help me, fix my name.")
     coif = Elemento(coifa, tit = "chick peas", drag=True,
-        x = 0, y = 0, w = 700, h = 100, drop="coif",
+        x = 0, y = 0, w = 700, h = 100, drop="suction hood",
         cena=_sala.oeste, texto="Please help me, fix my name.")
 
     sweet_potato = Elemento(sweetpotato, tit = "olive oil", drop="sweet potato",
