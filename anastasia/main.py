@@ -32,7 +32,7 @@ def gimnasium():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        texto = """ One day, there was a manifestation against Claudemilson, and she did not like it. She made the demonstrators hear "Funk Carioca" during 10 hours... """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
