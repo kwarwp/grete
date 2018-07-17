@@ -39,7 +39,7 @@ leyden  = "https://i.imgur.com/abeXKwL.jpg"
 volcano  = "https://i.imgur.com/4Y5aie8.jpg"
 globe  = "https://i.imgur.com/EQtHzod.jpg"
 ball  = "https://i.imgur.com/rBbRsFU.jpg"
-TIRINHA_DA_SECRETARIA= "https://i.imgur.com/KeOGmaf.png"
+TIRINHA_DA_SECRETARIA= "https://i.imgur.com/555hVt2.png"
 SECRETARY = None
 def secretary():
     global SECRETARY
