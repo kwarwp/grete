@@ -34,16 +34,16 @@ def principalsroom():
         def redir():
             _vai.vai = _gone_principalsroom
         historia = Cena(TIRINHA_PRINCIPALS_ROOM, _vai, _vai, _vai)
-        texto = """Cleison goes to the principals room
-Cleison hears someone calling him. He did not know who it was. He looked and saw a woman wearing a t-shirt with the words : Become Claudemilson. 
-She said:
--Go to the Principals room!!!!
-He remembered that  in his time he had a principal named George that was cool.
-He did not understand anything, only followed the woman. In the principas room, she said
+        texto = """Cleison goes to the principal's room--
+Cleison hears someone calling him. He did not know who it was. He lookes and sees a woman wearing a t-shirt with the words : 'Become Claudemilson'. 
+She says:
+-Go to the Principal's room!!!!
+In that moment he remembered that whe he was a student there the name of the principal was George. He was cool.
+He did not understand anything, only followed the woman. In the principal's room, she said
 -You will have to listen to a rap and a funk of the dictatorship of Claudemilson and eat raw noodles!!!
-Out of nowhere started a beat: Become Claudemilson
-Wile Claudemilson was not seeing, Claison escaped.
-When he ran away, he got into his car and went around desperately, but a traffic policeman stopped him . In this meanwhile, Claudemilson had time to reach him.Claudemilson began to shout with Cleison and in the meantime a fiscal that passed near there decided to enter the school .He saw that Claudemilson tortured the children, and she was arrested.
+Out of nowhere, a sound started to beat: Become Claudemilson.
+While Claudemilson was distracted, Claison escaped.
+When he ran away, he got into his car and speeded desperately, but a traffic policeman stopped him. Meanwhile, Claudemilson had time to reach him. She began to shout with Cleison. Back at school an inspector that passed nearby decided to enter the school .He saw that Claudemilson tortured the children, and she was arrested.
 """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
