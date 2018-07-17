@@ -9,11 +9,11 @@ Principals_room_l = "https://i.imgur.com/SV1Ko1N.jpg"
 Principals_room_s = "https://i.imgur.com/V85pfUS.jpg"
 principalsroom_ = None #"https://i.imgur.com/UsGRBIp.jpg"
 # objects
-clips = "https://i.imgur.com/Z25C40V.jpg"
+clips_ = "https://i.imgur.com/Z25C40V.jpg"
 door_lock = "https://i.imgur.com/q1tJiqJ.jpg"
 keyboard = "https://i.imgur.com/EM4mZq2.jpg"
 power_plug ="https://i.imgur.com/4eX2x0y.jpg"
-pipe = "https://i.imgur.com/IWX6ah1.jpg"
+pipe_ = "https://i.imgur.com/IWX6ah1.jpg"
 caixa_mae = "https://i.imgur.com/THLu9uv.jpg"
 
 PRR = None
@@ -59,23 +59,23 @@ When he ran away, he got into his car and went around desperately, but a traffic
     _sala.sul.meio.vai = go_principalsroom
     caixa = Elemento(caixa_mae, tit = "pipe", drag=True,
         x = 480, y = 140, w = 180, h = 290, drop="router rack",
-       cena=_sala.norte, texto="please, help me, fix my name")
-    clip  = Elemento(clips, tit = "power plug", drag=True,
+       cena=_sala.norte, texto="Please help me, fix my name.")
+    clip  = Elemento(clips_, tit = "power plug", drag=True,
         x = 260, y = 410, w = 80, h = 100, drop="clips",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        cena=_sala.leste, texto="Please help me, fix my name.")
 
-    pipes = Elemento(pipe, tit = "router rack", drop="pipes",
+    pipes = Elemento(pipe_, tit = "router rack", drop="pipe",
         x = 500, y = 5, w = 100, h = 120,
-        cena=_sala.norte, texto="please, help me, fix my name")
+        cena=_sala.norte, texto="Please help me, fix my name.")
     power = Elemento(power_plug, tit = "locker", drag=True,
         x = 510, y = 360, w = 100, h = 90, drop="power plug",
-       cena=_sala.leste, texto="please, help me, fix my name")
+       cena=_sala.leste, texto="Please help me, fix my name.")
     doorl = Elemento(door_lock, tit = "keyboard", drag=True,
-        x = 440, y = 380, w = 80, h = 100, drop="locker"
-        cena=_sala.sul, texto="please, help me, fix my name")
-    keyboard_ = Elemento(keyboard, tit = "clip", drag=True,
-        x = 300, y = 300, w = 100, h = 70,drop="keyboard",
-        cena=_sala.leste, texto="please, help me, fix my name")
+        x = 440, y = 380, w = 80, h = 100, drop="locker",
+        cena=_sala.sul, texto="Please help me, fix my name.")
+    keyboard_ = Elemento(keyboard, tit = "clips", drag=True,
+        x = 300, y = 300, w = 100, h = 70, drop="keyboard",
+        cena=_sala.leste, texto="Please help me, fix my name.")
 
     return _sala
 
