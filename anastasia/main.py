@@ -1,4 +1,5 @@
 # grete.anastasia.main.py
+# REVISADO PRONTO
 from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO, Sala
 STYLE["width"] = 800
 STYLE["height"] = "600px"
@@ -32,7 +33,7 @@ def gimnasium():
         def redir():
             _vai.vai = _gone_gimnasiun
         historia = Cena(TIRINHA_DO_CLAUDEMILSON, _vai, _vai, _vai)
-        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
+        texto = """ One day, there was a manifestation against Claudemilson, and she didnÂÂ´t like it. She made the people of the manifestation hear Funk Carioca during 10 hours.. """ 
         _vai.vai = Texto(historia, '', texto, foi=redir).vai
         historia.vai()
         
