@@ -23,6 +23,13 @@ def kitchen():
     global PRR
     if PRR:
         return PRR
+    
+    def _go_secretary():
+        try:
+            secretary().sul.vai()
+        except:
+            from libby.main import secretary 
+            secretary().sul.vai()    
         
     def vai_geo():
         from naomi.main import geografia
@@ -30,6 +37,7 @@ def kitchen():
     PRR = _sala = Sala(kit_n,kit_o,kit_l,kit_s, "principal")
     from naomi.main import Elemento
     _sala.sul.meio.vai = vai_geo
+    _sala.leste.meio.vai = _go_secretary
     grao = Elemento(grao_de_bico, tit = "suction hood", drag=True,
         x = 670, y = 390, w = 100, h = 100, drop="chick peas",
        cena=_sala.leste, texto="Please help me, fix my name.")
