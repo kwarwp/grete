@@ -29,17 +29,14 @@ def trigonometria():
         except:
             from kathryn.main import geografia as geography
             geography().leste.vai()
-        
-    def vai_geo():
-        from naomi.main import geografia
-        geografia().sul.vai()
+
     TRIG = _sala = Sala(CLASS1,CLASS2,CLASS3,CLASS4, "trig")
     from naomi.main import Elemento
-    _sala.sul.meio.vai = vai_geo
+    _sala.sul.meio.vai = _go_geography
     parap = Elemento(parapeito, tit = "socket", drag=True,
         x = 610, y = 300, w = 80, h = 90, drop="sill",
         cena=_sala.norte, texto="Please help me, fix my name.")
-   
+
     interr = Elemento(interruptor, tit = "sill", drag=True,
         x = 360, y = 160, w = 40, h = 70, drop="light switch",
         cena=_sala.leste, texto="Please help me, fix my name.")
