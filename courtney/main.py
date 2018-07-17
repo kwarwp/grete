@@ -15,11 +15,11 @@ dispenser = "https://i.imgur.com/o9raZp8.jpg"
 napkin_holder = "https://i.imgur.com/czetnka.jpg"
 TIRINHA_DO_CLAUDEMILSON = "https://i.imgur.com/yX187fL.jpg"
 
-school_house = None
+School_House = None
 def school_house_():
     global school_house
-    if school_house:
-        return school_house
+    if School_House:
+        return School_House
         
     def _gone_school_house():
         try:
