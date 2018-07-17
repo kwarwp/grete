@@ -13,9 +13,11 @@ SGEO = "https://i.imgur.com/iybLHJK.jpg"
 OGEO = "https://i.imgur.com/js589HB.jpg"
 CORRECT = "My correct name: {}"
 NDCT = {}
+FIX_COUNT = {}
 
 
 class Elemento(Element):
+    _score = None
 
     def __init__(self, img="", vai=None, style=NDCT, tit="", alt="",
                  x=0, y=0, w=100, h=100, texto='',
@@ -58,6 +60,16 @@ class Elemento(Element):
         # self.img.onmousedown = self.img_prevent
         self.do_drag(drag)
         self.do_drop(drop)
+        Elemento._scorer_()
+
+    @classmethod
+    def _scorer_(cls):
+        Elemento._scorer_ = lambda *_ : None
+        Elemento._score = scr = Elemento()
+        scr.score_ = html.H1("0")
+        scr.elt <= scr.score_
+        scr.entra(INVENTARIO)
+        
 
     def foi(self):
         self._do_foi()
