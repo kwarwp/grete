@@ -165,10 +165,10 @@ def geografia(oeste=False):
         
     def _go_geometry():
         try:
-            geometry().leste.vai()
+            geometry().oeste.vai()
         except:
             from kathryn.main import trigonometria as geometry
-            geometry().leste.vai()
+            geometry().oeste.vai()
 
     panstyle = dict(left=750, top=110, width=50, maxHeight="230px")
     GEO = _sala = Sala(NGEO, LGEO, SGEO, OGEO, "geo") 
@@ -181,8 +181,8 @@ def geografia(oeste=False):
                    style=panstyle, cena=_sala.leste, texto="Please help me, fix my name.")
     _ = mic, pan
     _sala.norte.meio = Cena(vai=vai_trigo)
-    _sala.sul.meio.vai = _go_gymnasiun
-    _sala.leste.meio.vai = _go_geometry
+    _sala.sul.meio = Cena(vai=_go_gymnasiun)
+    _sala.leste.meio = Cena(vai=_go_geometry)
     return _sala
     # o_geo.vai() if oeste else s_geo.vai()
 
