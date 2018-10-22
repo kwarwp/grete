@@ -115,3 +115,10 @@ NameError: name 'ball' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Oct 22 2018 10:05:26.160 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  INVENTARIO.inicia()
+  ^
+IndentationError: unexpected indent
+'''},
