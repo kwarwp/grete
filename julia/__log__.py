@@ -70,3 +70,10 @@ NameError: name 'ESCOLA' is not defined
              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Oct 21 2019 11:59:45.451 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 5
+  class Jogo
+             ^
+SyntaxError: invalid syntax
+'''},
