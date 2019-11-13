@@ -180,3 +180,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Nov 13 2019 17:58:13.490 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  INVENTARIO.inicia()
+  ^
+IndentationError: unexpected indent
+'''},
