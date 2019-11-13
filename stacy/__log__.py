@@ -173,3 +173,10 @@ NameError: name 'INVENTARIO' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Nov 13 2019 17:57:59.965 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  INVENTARIO.inicia()
+  ^
+IndentationError: unexpected indent
+'''},
