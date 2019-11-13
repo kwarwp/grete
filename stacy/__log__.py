@@ -187,3 +187,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Nov 13 2019 17:58:23.401 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  n_trig = Cena(CLASS23A)
+  ^
+IndentationError: unexpected indent
+'''},
