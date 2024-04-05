@@ -31,3 +31,10 @@ SyntaxError: invalid syntax
     cenaParque = Cena(img = "http://www.fundospaisagens.com/Imagens/parque-com-arvores.jpg")
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Fri Apr 05 2024 18:40:41.479 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  cenaParque = Cena(img = "http://www.fundospaisagens.com/Imagens/parque-com-arvores.jpg"
+                                                                                                      ^
+SyntaxError: invalid syntax
+'''},
